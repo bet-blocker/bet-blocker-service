@@ -1,12 +1,138 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\www\\bet-blocker-api\\Api\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E91F72-E3F6-4F00-8716-F5DE9C2E896F}|Api.csproj|d:\\www\\bet-blocker-api\\api\\controllers\\apimanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E91F72-E3F6-4F00-8716-F5DE9C2E896F}|Api.csproj|solutionrelative:controllers\\apimanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E91F72-E3F6-4F00-8716-F5DE9C2E896F}|Api.csproj|d:\\www\\bet-blocker-api\\api\\dtos\\hostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E91F72-E3F6-4F00-8716-F5DE9C2E896F}|Api.csproj|solutionrelative:dtos\\hostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E91F72-E3F6-4F00-8716-F5DE9C2E896F}|Api.csproj|d:\\www\\bet-blocker-api\\api\\dtos\\responsehostsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E91F72-E3F6-4F00-8716-F5DE9C2E896F}|Api.csproj|solutionrelative:dtos\\responsehostsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E91F72-E3F6-4F00-8716-F5DE9C2E896F}|Api.csproj|d:\\www\\bet-blocker-api\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B3E91F72-E3F6-4F00-8716-F5DE9C2E896F}|Api.csproj|solutionrelative:api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E91F72-E3F6-4F00-8716-F5DE9C2E896F}|Api.csproj|d:\\www\\bet-blocker-api\\api\\api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{B3E91F72-E3F6-4F00-8716-F5DE9C2E896F}|Api.csproj|solutionrelative:api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E91F72-E3F6-4F00-8716-F5DE9C2E896F}|Api.csproj|d:\\www\\bet-blocker-api\\api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B3E91F72-E3F6-4F00-8716-F5DE9C2E896F}|Api.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E91F72-E3F6-4F00-8716-F5DE9C2E896F}|Api.csproj|d:\\www\\bet-blocker-api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E91F72-E3F6-4F00-8716-F5DE9C2E896F}|Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResponseHostsDTO.cs",
+              "DocumentMoniker": "D:\\www\\bet-blocker-api\\Api\\DTOs\\ResponseHostsDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\ResponseHostsDTO.cs",
+              "ToolTip": "D:\\www\\bet-blocker-api\\Api\\DTOs\\ResponseHostsDTO.cs",
+              "RelativeToolTip": "DTOs\\ResponseHostsDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T22:14:05.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HostDTO.cs",
+              "DocumentMoniker": "D:\\www\\bet-blocker-api\\Api\\DTOs\\HostDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\HostDTO.cs",
+              "ToolTip": "D:\\www\\bet-blocker-api\\Api\\DTOs\\HostDTO.cs",
+              "RelativeToolTip": "DTOs\\HostDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T22:11:25.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Api",
+              "DocumentMoniker": "D:\\www\\bet-blocker-api\\Api\\Api.csproj",
+              "RelativeDocumentMoniker": "Api.csproj",
+              "ToolTip": "D:\\www\\bet-blocker-api\\Api\\Api.csproj",
+              "RelativeToolTip": "Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-08T22:09:57.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\www\\bet-blocker-api\\Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\www\\bet-blocker-api\\Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-08T21:50:11.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Api",
+              "DocumentMoniker": "D:\\www\\bet-blocker-api\\Api\\Api.csproj",
+              "RelativeDocumentMoniker": "Api.csproj",
+              "ToolTip": "D:\\www\\bet-blocker-api\\Api\\Api.csproj",
+              "RelativeToolTip": "Api.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-08T21:50:04.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "APIManagerController.cs",
+              "DocumentMoniker": "D:\\www\\bet-blocker-api\\Api\\Controllers\\APIManagerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\APIManagerController.cs",
+              "ToolTip": "D:\\www\\bet-blocker-api\\Api\\Controllers\\APIManagerController.cs",
+              "RelativeToolTip": "Controllers\\APIManagerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T21:47:56.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\www\\bet-blocker-api\\Api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\www\\bet-blocker-api\\Api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T21:46:40.931Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
