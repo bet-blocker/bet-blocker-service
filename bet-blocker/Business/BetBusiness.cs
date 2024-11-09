@@ -11,7 +11,11 @@ namespace bet_blocker.Business
         private readonly ICaller _caller;
         private readonly string _endpoint;
         private readonly string _storagePath;
+        
         private static readonly object LockObject = new object();
+        
+        private const int MaxParallelism = 10;
+        private const int DnsCacheDurationMinutes = 10;
 
         public BetBusiness(ICaller caller, IConfiguration configuration)
         {
