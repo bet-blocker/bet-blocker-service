@@ -10,6 +10,15 @@
 
 A API utiliza o método **GET** para listar os dados dos hosts, fornecendo informações detalhadas sobre cada domínio, incluindo seu nome, DNS, protocolos suportados, IPs associados e dados de regulamentação da Anatel.
 
+
+## Endpoint da API
+
+Sendo a data do dia: exemplo 09-11-2024.json
+
+```txt
+https://bet-blocker.com/api/v1/09-11-2024.json
+```
+
 ### Estrutura de Retorno (Callback)
 
 Abaixo, a estrutura de dados retornada pela API:
