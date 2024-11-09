@@ -50,7 +50,7 @@ namespace bet_blocker.Controllers
             }
         }
 
-        [HttpGet("dns-resolution/{date}.json")]
+        [HttpGet("{date}.json")]
         public IActionResult GetDnsResolution(string date)
         {
             var filePath = Path.Combine(_storagePath, $"{date}.json");
