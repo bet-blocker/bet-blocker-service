@@ -1,8 +1,8 @@
-﻿using Microsoft.Extensions.Caching.Memory;
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 using bet_blocker.Business.Interfaces;
 using Infrastructure.Services.Interfaces;
 using static bet_blocker.DTOs.ResponseHostDto;
+using System.Text.Json;
 
 namespace bet_blocker.Business
 {
@@ -10,27 +10,32 @@ namespace bet_blocker.Business
     {
         private readonly ICaller _caller;
         private readonly string _endpoint;
-        private readonly IMemoryCache _cache;
-        private const string CacheKey = "DNSResolutionStatus";
+        private readonly string _storagePath;
         private static readonly object LockObject = new object();
 
-        public BetBusiness(ICaller caller, IConfiguration configuration, IMemoryCache cache)
+        public BetBusiness(ICaller caller, IConfiguration configuration)
         {
             _caller = caller;
             _endpoint = configuration.GetSection("blockList").Value;
-            _cache = cache;
+            _storagePath = configuration.GetSection("StoragePath").Value;
+
+            if (!Directory.Exists(_storagePath))
+            {
+                Directory.CreateDirectory(_storagePath);
+            }
         }
 
         public void StartResolutionProcess(CancellationToken cancellationToken)
         {
             lock (LockObject)
             {
-                if (_cache.TryGetValue(CacheKey, out var status) && status.ToString() == "Processing")
-                {
-                    throw new InvalidOperationException("A resolução de DNS já está em andamento. Tente novamente mais tarde.");
-                }
+                var currentDate = DateTime.UtcNow.ToString("dd-MM-yyyy");
+                var filePath = Path.Combine(_storagePath, $"{currentDate}.json");
 
-                _cache.Set(CacheKey, "Processing", TimeSpan.FromDays(1));
+                if (File.Exists(filePath))
+                {
+                    throw new InvalidOperationException("A resolução de DNS já foi gerada para hoje. Tente novamente amanhã.");
+                }
             }
 
             _ = Task.Run(async () =>
@@ -38,12 +43,28 @@ namespace bet_blocker.Business
                 try
                 {
                     var resolvedHosts = await GetList(cancellationToken);
-                    _cache.Set(CacheKey, resolvedHosts);
+                    var currentDate = DateTime.UtcNow.ToString("dd-MM-yyyy");
+
+                    var filePath = Path.Combine(_storagePath, $"{currentDate}.json");
+
+                    var json = JsonSerializer.Serialize(new
+                    {
+                        Date = currentDate,
+                        ResolvedHosts = resolvedHosts
+                    }, new JsonSerializerOptions { WriteIndented = true });
+
+                    File.WriteAllText(filePath, json);
+
+                    if (!Directory.Exists(_storagePath))
+                    {
+                        Directory.CreateDirectory(_storagePath);
+                    }
+
+                    File.WriteAllText(filePath, json);
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Erro durante a resolução de DNS: {ex.Message}");
-                    _cache.Set(CacheKey, "Falha ao resolver DNS");
                 }
             }, cancellationToken);
         }
@@ -127,12 +148,17 @@ namespace bet_blocker.Business
 
         public object GetResolutionStatus()
         {
-            if (_cache.TryGetValue(CacheKey, out var status))
+            var currentDate = DateTime.UtcNow.ToString("dd-MM-yyyy");
+            var filePath = Path.Combine(_storagePath, $"{currentDate}.json");
+
+            if (File.Exists(filePath))
             {
-                return status;
+                var json = File.ReadAllText(filePath);
+                var result = JsonSerializer.Deserialize<object>(json); 
+                return result;
             }
 
-            return "Nenhum processo iniciado";
+            return "Nenhum processo iniciado ou resolução não encontrada para hoje.";
         }
     }
 }

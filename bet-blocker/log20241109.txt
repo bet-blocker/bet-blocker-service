@@ -2129,3 +2129,1006 @@ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport 
 2024-11-09 00:54:21.625 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker) in 1.9119ms
 2024-11-09 00:54:21.626 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
 2024-11-09 00:54:21.626 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/api/v1/status - 200 null text/plain; charset=utf-8 57.5ms
+2024-11-09 13:22:56.675 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-11-09 13:22:56.758 -04:00 [DBG] Hosting starting
+2024-11-09 13:22:57.362 -04:00 [INF] Now listening on: https://localhost:7044
+2024-11-09 13:22:57.384 -04:00 [INF] Now listening on: http://localhost:5240
+2024-11-09 13:22:57.384 -04:00 [DBG] Loaded hosting startup assembly bet-blocker
+2024-11-09 13:22:57.389 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-09 13:22:57.391 -04:00 [INF] Hosting environment: Development
+2024-11-09 13:22:57.393 -04:00 [INF] Content root path: /Users/brunohashimoto/Projects/bet-blocker/bet-blocker
+2024-11-09 13:22:57.393 -04:00 [DBG] Hosting started
+2024-11-09 13:22:57.403 -04:00 [DBG] Connection id "0HN80SCJLCN3R" accepted.
+2024-11-09 13:22:57.404 -04:00 [DBG] Connection id "0HN80SCJLCN3R" started.
+2024-11-09 13:22:58.360 -04:00 [DBG] Connection id "0HN80SCJLCN3R" received FIN.
+2024-11-09 13:22:58.368 -04:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-11-09 13:22:58.403 -04:00 [DBG] Connection id "0HN80SCJLCN3R" stopped.
+2024-11-09 13:22:58.408 -04:00 [DBG] Connection id "0HN80SCJLCN3R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:22:59.306 -04:00 [DBG] Connection id "0HN80SCJLCN3S" accepted.
+2024-11-09 13:22:59.316 -04:00 [DBG] Connection id "0HN80SCJLCN3S" started.
+2024-11-09 13:22:59.452 -04:00 [DBG] Connection 0HN80SCJLCN3S established using the following protocol: "Tls12"
+2024-11-09 13:22:59.563 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/swagger/index.html - null null
+2024-11-09 13:22:59.565 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-11-09 13:22:59.598 -04:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-11-09 13:22:59.599 -04:00 [DBG] Request did not match any endpoints
+2024-11-09 13:22:59.979 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/swagger/index.html - 200 null text/html;charset=utf-8 418.3767ms
+2024-11-09 13:23:01.293 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/swagger/swagger-ui-bundle.js - null null
+2024-11-09 13:23:01.298 -04:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2024-11-09 13:23:01.299 -04:00 [DBG] Request did not match any endpoints
+2024-11-09 13:23:01.889 -04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-11-09 13:23:01.890 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 598.3527ms
+2024-11-09 13:23:02.916 -04:00 [DBG] Connection id "0HN80SCJLCN3S" received FIN.
+2024-11-09 13:23:02.942 -04:00 [DBG] Connection id "0HN80SCJLCN3T" accepted.
+2024-11-09 13:23:02.944 -04:00 [DBG] Connection id "0HN80SCJLCN3T" started.
+2024-11-09 13:23:02.972 -04:00 [DBG] The connection queue processing loop for 0HN80SCJLCN3S completed.
+2024-11-09 13:23:02.977 -04:00 [DBG] Connection id "0HN80SCJLCN3S" is closed. The last processed stream ID was 3.
+2024-11-09 13:23:02.981 -04:00 [DBG] Connection id "0HN80SCJLCN3S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:23:02.987 -04:00 [DBG] Connection id "0HN80SCJLCN3S" stopped.
+2024-11-09 13:23:03.199 -04:00 [DBG] Connection 0HN80SCJLCN3T established using the following protocol: "Tls12"
+2024-11-09 13:23:03.241 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/swagger/v1/swagger.json - null null
+2024-11-09 13:23:03.337 -04:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-11-09 13:23:03.358 -04:00 [DBG] Request did not match any endpoints
+2024-11-09 13:23:03.820 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 578.7569ms
+2024-11-09 13:23:07.838 -04:00 [DBG] Connection id "0HN80SCJLCN3T" received FIN.
+2024-11-09 13:23:07.843 -04:00 [DBG] Connection id "0HN80SCJLCN3T" is closed. The last processed stream ID was 1.
+2024-11-09 13:23:07.843 -04:00 [DBG] The connection queue processing loop for 0HN80SCJLCN3T completed.
+2024-11-09 13:23:07.844 -04:00 [DBG] Connection id "0HN80SCJLCN3T" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:23:07.864 -04:00 [DBG] Connection id "0HN80SCJLCN3T" stopped.
+2024-11-09 13:23:14.726 -04:00 [DBG] Connection id "0HN80SCJLCN3U" accepted.
+2024-11-09 13:23:14.727 -04:00 [DBG] Connection id "0HN80SCJLCN3U" started.
+2024-11-09 13:23:14.761 -04:00 [DBG] Connection 0HN80SCJLCN3U established using the following protocol: "Tls12"
+2024-11-09 13:23:14.886 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/api/v1/start - null null
+2024-11-09 13:23:14.896 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/start'
+2024-11-09 13:23:14.900 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)' with route pattern 'api/v1/start' is valid for the request path '/api/v1/start'
+2024-11-09 13:23:14.901 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:23:14.903 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:23:14.908 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:23:14.931 -04:00 [INF] Route matched with {action = "StartResolution", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartResolution(System.Threading.CancellationToken) on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:23:14.932 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:23:14.932 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:23:14.932 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:23:14.932 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:23:14.932 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:23:14.933 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:23:14.942 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:23:14.951 -04:00 [DBG] Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:23:14.952 -04:00 [DBG] Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:23:14.952 -04:00 [DBG] Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:23:14.955 -04:00 [DBG] Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:23:14.957 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:23:14.959 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:23:14.959 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:23:14.959 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:23:14.959 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-11-09 13:23:14.959 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-09 13:23:14.963 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker) in 28.0175ms
+2024-11-09 13:23:14.963 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:23:14.963 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/api/v1/start - 200 null text/plain; charset=utf-8 102.2502ms
+2024-11-09 13:23:14.965 -04:00 [INF] Start processing HTTP request GET https://raw.githubusercontent.com/bet-blocker/bet-blocker/main/blocklist.txt
+2024-11-09 13:23:14.966 -04:00 [INF] Sending HTTP request GET https://raw.githubusercontent.com/bet-blocker/bet-blocker/main/blocklist.txt
+2024-11-09 13:23:15.327 -04:00 [INF] Received HTTP response headers after 353.9482ms - 200
+2024-11-09 13:23:15.328 -04:00 [INF] End processing HTTP request after 367.3055ms - 200
+2024-11-09 13:23:17.792 -04:00 [DBG] Connection id "0HN80SCJLCN3U" received FIN.
+2024-11-09 13:23:17.792 -04:00 [DBG] Connection id "0HN80SCJLCN3U" is closed. The last processed stream ID was 1.
+2024-11-09 13:23:17.793 -04:00 [DBG] Connection id "0HN80SCJLCN3U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:23:17.794 -04:00 [DBG] The connection queue processing loop for 0HN80SCJLCN3U completed.
+2024-11-09 13:23:17.794 -04:00 [DBG] Connection id "0HN80SCJLCN3U" stopped.
+2024-11-09 13:24:03.908 -04:00 [DBG] Connection id "0HN80SCJLCN3V" accepted.
+2024-11-09 13:24:03.932 -04:00 [DBG] Connection id "0HN80SCJLCN3V" started.
+2024-11-09 13:24:03.969 -04:00 [DBG] Connection 0HN80SCJLCN3V established using the following protocol: "Tls12"
+2024-11-09 13:24:04.069 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/api/v1/status - null null
+2024-11-09 13:24:04.074 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/status'
+2024-11-09 13:24:04.075 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)' with route pattern 'api/v1/status' is valid for the request path '/api/v1/status'
+2024-11-09 13:24:04.076 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:24:04.079 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:24:04.085 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:24:04.103 -04:00 [INF] Route matched with {action = "GetResolutionStatus", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetResolutionStatus() on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:24:04.103 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:24:04.103 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:24:04.103 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:24:04.103 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:24:04.103 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:24:04.103 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:24:04.105 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:24:04.105 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:24:04.105 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:24:04.105 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:24:04.106 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:24:04.106 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-11-09 13:24:04.107 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[bet_blocker.DTOs.ResponseHostDto+ResponseHostsDTO, bet-blocker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-09 13:24:04.518 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker) in 415.331ms
+2024-11-09 13:24:04.519 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:24:04.519 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/api/v1/status - 200 null application/json; charset=utf-8 450.3836ms
+2024-11-09 13:24:07.785 -04:00 [DBG] Connection id "0HN80SCJLCN3V" received FIN.
+2024-11-09 13:24:07.785 -04:00 [DBG] Connection id "0HN80SCJLCN3V" is closed. The last processed stream ID was 1.
+2024-11-09 13:24:07.786 -04:00 [DBG] Connection id "0HN80SCJLCN3V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:24:07.786 -04:00 [DBG] The connection queue processing loop for 0HN80SCJLCN3V completed.
+2024-11-09 13:24:07.786 -04:00 [DBG] Connection id "0HN80SCJLCN3V" stopped.
+2024-11-09 13:24:42.919 -04:00 [DBG] Connection id "0HN80SCJLCN40" accepted.
+2024-11-09 13:24:42.942 -04:00 [DBG] Connection id "0HN80SCJLCN40" started.
+2024-11-09 13:24:42.998 -04:00 [DBG] Connection 0HN80SCJLCN40 established using the following protocol: "Tls12"
+2024-11-09 13:24:43.068 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/api/v1/status - null null
+2024-11-09 13:24:43.090 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/status'
+2024-11-09 13:24:43.090 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)' with route pattern 'api/v1/status' is valid for the request path '/api/v1/status'
+2024-11-09 13:24:43.091 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:24:43.092 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:24:43.094 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:24:43.095 -04:00 [INF] Route matched with {action = "GetResolutionStatus", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetResolutionStatus() on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:24:43.096 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:24:43.096 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:24:43.096 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:24:43.096 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:24:43.097 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:24:43.097 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:24:43.101 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:24:43.104 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:24:43.104 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:24:43.104 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:24:43.104 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:24:43.104 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-11-09 13:24:43.105 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[bet_blocker.DTOs.ResponseHostDto+ResponseHostsDTO, bet-blocker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-09 13:24:43.426 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker) in 328.889ms
+2024-11-09 13:24:43.426 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:24:43.426 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/api/v1/status - 200 null application/json; charset=utf-8 358.1797ms
+2024-11-09 13:24:45.690 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/api/v1/start - null null
+2024-11-09 13:24:45.691 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/start'
+2024-11-09 13:24:45.691 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)' with route pattern 'api/v1/start' is valid for the request path '/api/v1/start'
+2024-11-09 13:24:45.691 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:24:45.691 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:24:45.691 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:24:45.692 -04:00 [INF] Route matched with {action = "StartResolution", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartResolution(System.Threading.CancellationToken) on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:24:45.692 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:24:45.692 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:24:45.692 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:24:45.692 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:24:45.692 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:24:45.692 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:24:45.693 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:24:45.694 -04:00 [DBG] Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:24:45.694 -04:00 [DBG] Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:24:45.694 -04:00 [DBG] Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:24:45.695 -04:00 [DBG] Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:24:45.695 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:24:45.695 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:24:45.695 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:24:45.695 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:24:45.695 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-11-09 13:24:45.699 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-09 13:24:45.699 -04:00 [INF] Start processing HTTP request GET https://raw.githubusercontent.com/bet-blocker/bet-blocker/main/blocklist.txt
+2024-11-09 13:24:45.699 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker) in 6.7007ms
+2024-11-09 13:24:45.701 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:24:45.701 -04:00 [INF] Sending HTTP request GET https://raw.githubusercontent.com/bet-blocker/bet-blocker/main/blocklist.txt
+2024-11-09 13:24:45.701 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/api/v1/start - 200 null text/plain; charset=utf-8 10.9908ms
+2024-11-09 13:24:45.887 -04:00 [INF] Received HTTP response headers after 184.3897ms - 200
+2024-11-09 13:24:45.889 -04:00 [INF] End processing HTTP request after 191.7869ms - 200
+2024-11-09 13:24:47.888 -04:00 [DBG] Connection id "0HN80SCJLCN40" received FIN.
+2024-11-09 13:24:47.984 -04:00 [DBG] Connection id "0HN80SCJLCN40" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:24:47.989 -04:00 [DBG] Connection id "0HN80SCJLCN40" is closed. The last processed stream ID was 3.
+2024-11-09 13:24:47.990 -04:00 [DBG] Connection id "0HN80SCJLCN41" accepted.
+2024-11-09 13:24:47.991 -04:00 [DBG] Connection id "0HN80SCJLCN41" started.
+2024-11-09 13:24:48.019 -04:00 [DBG] The connection queue processing loop for 0HN80SCJLCN40 completed.
+2024-11-09 13:24:48.019 -04:00 [DBG] Connection id "0HN80SCJLCN40" stopped.
+2024-11-09 13:24:48.085 -04:00 [DBG] Connection 0HN80SCJLCN41 established using the following protocol: "Tls12"
+2024-11-09 13:24:48.121 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/api/v1/start - null null
+2024-11-09 13:24:48.147 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/start'
+2024-11-09 13:24:48.172 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)' with route pattern 'api/v1/start' is valid for the request path '/api/v1/start'
+2024-11-09 13:24:48.173 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:24:48.203 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:24:48.203 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:24:48.203 -04:00 [INF] Route matched with {action = "StartResolution", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartResolution(System.Threading.CancellationToken) on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:24:48.203 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:24:48.203 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:24:48.210 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:24:48.214 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:24:48.215 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:24:48.215 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:24:48.240 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:24:48.241 -04:00 [DBG] Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:24:48.241 -04:00 [DBG] Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:24:48.241 -04:00 [DBG] Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:24:48.241 -04:00 [DBG] Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:24:48.346 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:24:48.350 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:24:48.350 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:24:48.350 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:24:48.374 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-11-09 13:24:48.400 -04:00 [INF] Executing ConflictObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-09 13:24:48.775 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker) in 560.2481ms
+2024-11-09 13:24:48.776 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:24:48.776 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/api/v1/start - 409 null application/json; charset=utf-8 655.2172ms
+2024-11-09 13:24:57.376 -04:00 [DBG] Connection id "0HN80SCJLCN41" received FIN.
+2024-11-09 13:24:57.471 -04:00 [DBG] Connection id "0HN80SCJLCN41" is closed. The last processed stream ID was 1.
+2024-11-09 13:24:57.507 -04:00 [DBG] Connection id "0HN80SCJLCN41" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:24:57.509 -04:00 [DBG] The connection queue processing loop for 0HN80SCJLCN41 completed.
+2024-11-09 13:24:57.510 -04:00 [DBG] Connection id "0HN80SCJLCN41" stopped.
+2024-11-09 13:25:02.962 -04:00 [DBG] Connection id "0HN80SCJLCN42" accepted.
+2024-11-09 13:25:02.963 -04:00 [DBG] Connection id "0HN80SCJLCN42" started.
+2024-11-09 13:25:03.016 -04:00 [DBG] Connection 0HN80SCJLCN42 established using the following protocol: "Tls12"
+2024-11-09 13:25:03.113 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/api/v1/status - null null
+2024-11-09 13:25:03.114 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/status'
+2024-11-09 13:25:03.114 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)' with route pattern 'api/v1/status' is valid for the request path '/api/v1/status'
+2024-11-09 13:25:03.114 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:25:03.115 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:25:03.115 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:25:03.116 -04:00 [INF] Route matched with {action = "GetResolutionStatus", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetResolutionStatus() on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:25:03.116 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:25:03.116 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:25:03.116 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:25:03.116 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:25:03.116 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:25:03.117 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:25:03.117 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:25:03.117 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:25:03.117 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:25:03.117 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:25:03.117 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:25:03.117 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-11-09 13:25:03.117 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[bet_blocker.DTOs.ResponseHostDto+ResponseHostsDTO, bet-blocker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-09 13:25:03.341 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker) in 224.1925ms
+2024-11-09 13:25:03.341 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:25:03.343 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/api/v1/status - 200 null application/json; charset=utf-8 250.6214ms
+2024-11-09 13:25:06.454 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/api/v1/status - null null
+2024-11-09 13:25:06.455 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/status'
+2024-11-09 13:25:06.455 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)' with route pattern 'api/v1/status' is valid for the request path '/api/v1/status'
+2024-11-09 13:25:06.455 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:25:06.455 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:25:06.455 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:25:06.456 -04:00 [INF] Route matched with {action = "GetResolutionStatus", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetResolutionStatus() on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:25:06.456 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:25:06.456 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:25:06.456 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:25:06.456 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:25:06.456 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:25:06.456 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:25:06.456 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:25:06.457 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:25:06.457 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:25:06.457 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:25:06.457 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:25:06.457 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-11-09 13:25:06.457 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[bet_blocker.DTOs.ResponseHostDto+ResponseHostsDTO, bet-blocker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-09 13:25:06.664 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker) in 207.3422ms
+2024-11-09 13:25:06.664 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:25:06.664 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/api/v1/status - 200 null application/json; charset=utf-8 209.7436ms
+2024-11-09 13:25:07.796 -04:00 [DBG] Connection id "0HN80SCJLCN42" received FIN.
+2024-11-09 13:25:07.797 -04:00 [DBG] Connection id "0HN80SCJLCN42" is closed. The last processed stream ID was 3.
+2024-11-09 13:25:07.797 -04:00 [DBG] Connection id "0HN80SCJLCN42" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:25:07.798 -04:00 [DBG] The connection queue processing loop for 0HN80SCJLCN42 completed.
+2024-11-09 13:25:07.799 -04:00 [DBG] Connection id "0HN80SCJLCN42" stopped.
+2024-11-09 13:25:09.719 -04:00 [DBG] Connection id "0HN80SCJLCN43" accepted.
+2024-11-09 13:25:09.719 -04:00 [DBG] Connection id "0HN80SCJLCN43" started.
+2024-11-09 13:25:09.753 -04:00 [DBG] Connection 0HN80SCJLCN43 established using the following protocol: "Tls12"
+2024-11-09 13:25:09.830 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/swagger/index.html - null null
+2024-11-09 13:25:09.831 -04:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-11-09 13:25:09.832 -04:00 [DBG] Request did not match any endpoints
+2024-11-09 13:25:09.902 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/swagger/index.html - 200 null text/html;charset=utf-8 97.4235ms
+2024-11-09 13:25:10.752 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/swagger/v1/swagger.json - null null
+2024-11-09 13:25:10.752 -04:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-11-09 13:25:10.753 -04:00 [DBG] Request did not match any endpoints
+2024-11-09 13:25:10.778 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.3956ms
+2024-11-09 13:25:12.798 -04:00 [DBG] Connection id "0HN80SCJLCN43" received FIN.
+2024-11-09 13:25:12.800 -04:00 [DBG] Connection id "0HN80SCJLCN43" is closed. The last processed stream ID was 3.
+2024-11-09 13:25:12.800 -04:00 [DBG] Connection id "0HN80SCJLCN43" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:25:12.801 -04:00 [DBG] The connection queue processing loop for 0HN80SCJLCN43 completed.
+2024-11-09 13:25:12.802 -04:00 [DBG] Connection id "0HN80SCJLCN43" stopped.
+2024-11-09 13:25:14.967 -04:00 [DBG] HttpMessageHandler expired after 120000ms for client 'ICaller'
+2024-11-09 13:25:24.979 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:25:24.983 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.1061ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:25:34.985 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:25:34.987 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0645ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:25:44.990 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:25:44.991 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0467ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:25:54.994 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:25:54.995 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0504ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:26:04.998 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:26:04.998 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0367ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:26:15.002 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:26:15.003 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0662ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:26:25.008 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:26:25.009 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.076ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:26:35.013 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:26:35.014 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0636ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:26:45.016 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:26:45.018 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0582ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:26:49.314 -04:00 [DBG] Connection id "0HN80SCJLCN44" accepted.
+2024-11-09 13:26:49.316 -04:00 [DBG] Connection id "0HN80SCJLCN44" started.
+2024-11-09 13:26:49.407 -04:00 [DBG] Connection 0HN80SCJLCN44 established using the following protocol: "Tls12"
+2024-11-09 13:26:49.439 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/api/v1/status - null null
+2024-11-09 13:26:49.439 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/status'
+2024-11-09 13:26:49.439 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)' with route pattern 'api/v1/status' is valid for the request path '/api/v1/status'
+2024-11-09 13:26:49.439 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:26:49.440 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:26:49.441 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:26:49.442 -04:00 [INF] Route matched with {action = "GetResolutionStatus", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetResolutionStatus() on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:26:49.443 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:26:49.443 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:26:49.446 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:26:49.447 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:26:49.447 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:26:49.447 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:26:49.449 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:26:49.449 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:26:49.449 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:26:49.449 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:26:49.449 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:26:49.450 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-11-09 13:26:49.450 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[bet_blocker.DTOs.ResponseHostDto+ResponseHostsDTO, bet-blocker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-09 13:26:49.666 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker) in 218.7527ms
+2024-11-09 13:26:49.666 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:26:49.666 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/api/v1/status - 200 null application/json; charset=utf-8 227.2992ms
+2024-11-09 13:26:52.828 -04:00 [DBG] Connection id "0HN80SCJLCN44" received FIN.
+2024-11-09 13:26:52.828 -04:00 [DBG] Connection id "0HN80SCJLCN44" is closed. The last processed stream ID was 1.
+2024-11-09 13:26:52.828 -04:00 [DBG] Connection id "0HN80SCJLCN44" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:26:52.829 -04:00 [DBG] The connection queue processing loop for 0HN80SCJLCN44 completed.
+2024-11-09 13:26:52.829 -04:00 [DBG] Connection id "0HN80SCJLCN44" stopped.
+2024-11-09 13:26:55.032 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:26:55.033 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0353ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:27:05.036 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:27:05.038 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.1067ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:27:15.041 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:27:15.042 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.069ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:27:25.049 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:27:25.052 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.1145ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:27:35.055 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:27:35.056 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0474ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:27:45.060 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:27:45.061 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0812ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:27:55.165 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:27:55.166 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0656ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:28:05.173 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:28:05.174 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0751ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:28:15.179 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:28:15.179 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.1021ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:28:25.203 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:28:25.205 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0502ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:28:35.207 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:28:35.208 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0558ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:28:45.213 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2024-11-09 13:28:45.214 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0699ms - processed: 0 items - remaining: 1 items
+2024-11-09 13:28:49.456 -04:00 [DBG] HttpMessageHandler expired after 120000ms for client 'ICaller'
+2024-11-09 13:28:55.222 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2024-11-09 13:28:55.225 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0952ms - processed: 0 items - remaining: 2 items
+2024-11-09 13:28:59.939 -04:00 [DBG] Connection id "0HN80SCJLCN45" accepted.
+2024-11-09 13:28:59.940 -04:00 [DBG] Connection id "0HN80SCJLCN45" started.
+2024-11-09 13:29:00.004 -04:00 [DBG] Connection 0HN80SCJLCN45 established using the following protocol: "Tls12"
+2024-11-09 13:29:00.012 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/api/v1/status - null null
+2024-11-09 13:29:00.020 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/status'
+2024-11-09 13:29:00.020 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)' with route pattern 'api/v1/status' is valid for the request path '/api/v1/status'
+2024-11-09 13:29:00.052 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:29:00.108 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:29:00.112 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:29:00.126 -04:00 [INF] Route matched with {action = "GetResolutionStatus", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetResolutionStatus() on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:29:00.126 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:29:00.126 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:29:00.127 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:29:00.127 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:29:00.127 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:29:00.127 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:29:00.132 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:29:00.133 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:29:00.134 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:29:00.134 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:29:00.134 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:29:00.134 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-11-09 13:29:00.134 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[bet_blocker.DTOs.ResponseHostDto+ResponseHostsDTO, bet-blocker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-09 13:29:00.496 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker) in 368.6376ms
+2024-11-09 13:29:00.496 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:29:00.496 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/api/v1/status - 200 null application/json; charset=utf-8 484.3979ms
+2024-11-09 13:29:02.855 -04:00 [DBG] Connection id "0HN80SCJLCN45" received FIN.
+2024-11-09 13:29:02.857 -04:00 [DBG] Connection id "0HN80SCJLCN45" is closed. The last processed stream ID was 1.
+2024-11-09 13:29:02.857 -04:00 [DBG] Connection id "0HN80SCJLCN45" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:29:02.858 -04:00 [DBG] The connection queue processing loop for 0HN80SCJLCN45 completed.
+2024-11-09 13:29:02.859 -04:00 [DBG] Connection id "0HN80SCJLCN45" stopped.
+2024-11-09 13:29:04.065 -04:00 [DBG] Connection id "0HN80SCJLCN46" accepted.
+2024-11-09 13:29:04.066 -04:00 [DBG] Connection id "0HN80SCJLCN46" started.
+2024-11-09 13:29:04.096 -04:00 [DBG] Connection 0HN80SCJLCN46 established using the following protocol: "Tls12"
+2024-11-09 13:29:04.171 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/api/v1/start - null null
+2024-11-09 13:29:04.172 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/start'
+2024-11-09 13:29:04.172 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)' with route pattern 'api/v1/start' is valid for the request path '/api/v1/start'
+2024-11-09 13:29:04.172 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:29:04.173 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:29:04.173 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:29:04.174 -04:00 [INF] Route matched with {action = "StartResolution", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartResolution(System.Threading.CancellationToken) on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:29:04.174 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:29:04.174 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:29:04.174 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:29:04.174 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:29:04.174 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:29:04.174 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:29:04.175 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:29:04.176 -04:00 [DBG] Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:29:04.177 -04:00 [DBG] Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:29:04.177 -04:00 [DBG] Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:29:04.177 -04:00 [DBG] Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:29:04.178 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:29:04.178 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:29:04.179 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:29:04.179 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:29:04.179 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-11-09 13:29:04.179 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-09 13:29:04.179 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker) in 4.4145ms
+2024-11-09 13:29:04.179 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:29:04.179 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/api/v1/start - 200 null text/plain; charset=utf-8 8.1671ms
+2024-11-09 13:29:04.209 -04:00 [INF] Start processing HTTP request GET https://raw.githubusercontent.com/bet-blocker/bet-blocker/main/blocklist.txt
+2024-11-09 13:29:04.212 -04:00 [INF] Sending HTTP request GET https://raw.githubusercontent.com/bet-blocker/bet-blocker/main/blocklist.txt
+2024-11-09 13:29:04.605 -04:00 [INF] Received HTTP response headers after 390.3293ms - 200
+2024-11-09 13:29:04.608 -04:00 [INF] End processing HTTP request after 426.4015ms - 200
+2024-11-09 13:29:05.227 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2024-11-09 13:29:05.228 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0332ms - processed: 0 items - remaining: 2 items
+2024-11-09 13:29:07.865 -04:00 [DBG] Connection id "0HN80SCJLCN46" received FIN.
+2024-11-09 13:29:07.911 -04:00 [DBG] Connection id "0HN80SCJLCN46" is closed. The last processed stream ID was 1.
+2024-11-09 13:29:07.912 -04:00 [DBG] Connection id "0HN80SCJLCN46" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:29:07.914 -04:00 [DBG] The connection queue processing loop for 0HN80SCJLCN46 completed.
+2024-11-09 13:29:07.916 -04:00 [DBG] Connection id "0HN80SCJLCN46" stopped.
+2024-11-09 13:29:10.108 -04:00 [DBG] Connection id "0HN80SCJLCN47" accepted.
+2024-11-09 13:29:10.119 -04:00 [DBG] Connection id "0HN80SCJLCN47" started.
+2024-11-09 13:29:10.187 -04:00 [DBG] Connection 0HN80SCJLCN47 established using the following protocol: "Tls12"
+2024-11-09 13:29:10.215 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/swagger/index.html - null null
+2024-11-09 13:29:10.217 -04:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-11-09 13:29:10.217 -04:00 [DBG] Request did not match any endpoints
+2024-11-09 13:29:10.259 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/swagger/index.html - 200 null text/html;charset=utf-8 44.5567ms
+2024-11-09 13:29:11.646 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/swagger/v1/swagger.json - null null
+2024-11-09 13:29:11.652 -04:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-11-09 13:29:11.652 -04:00 [DBG] Request did not match any endpoints
+2024-11-09 13:29:11.814 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 194.5559ms
+2024-11-09 13:29:12.859 -04:00 [DBG] Connection id "0HN80SCJLCN47" received FIN.
+2024-11-09 13:29:12.860 -04:00 [DBG] Connection id "0HN80SCJLCN47" is closed. The last processed stream ID was 3.
+2024-11-09 13:29:12.860 -04:00 [DBG] Connection id "0HN80SCJLCN47" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:29:12.860 -04:00 [DBG] The connection queue processing loop for 0HN80SCJLCN47 completed.
+2024-11-09 13:29:12.861 -04:00 [DBG] Connection id "0HN80SCJLCN47" stopped.
+2024-11-09 13:29:14.466 -04:00 [DBG] Connection id "0HN80SCJLCN48" accepted.
+2024-11-09 13:29:14.467 -04:00 [DBG] Connection id "0HN80SCJLCN48" started.
+2024-11-09 13:29:14.521 -04:00 [DBG] Connection 0HN80SCJLCN48 established using the following protocol: "Tls12"
+2024-11-09 13:29:14.616 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/api/v1/start - null null
+2024-11-09 13:29:14.642 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/start'
+2024-11-09 13:29:14.642 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)' with route pattern 'api/v1/start' is valid for the request path '/api/v1/start'
+2024-11-09 13:29:14.642 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:29:14.643 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:29:14.643 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:29:14.644 -04:00 [INF] Route matched with {action = "StartResolution", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartResolution(System.Threading.CancellationToken) on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:29:14.644 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:29:14.645 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:29:14.645 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:29:14.645 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:29:14.645 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:29:14.645 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:29:14.645 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:29:14.646 -04:00 [DBG] Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:29:14.646 -04:00 [DBG] Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:29:14.646 -04:00 [DBG] Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:29:14.646 -04:00 [DBG] Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:29:14.680 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:29:14.681 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:29:14.681 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:29:14.681 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:29:14.681 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-11-09 13:29:14.681 -04:00 [INF] Executing ConflictObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-09 13:29:14.681 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker) in 36.3117ms
+2024-11-09 13:29:14.681 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:29:14.681 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/api/v1/start - 409 null application/json; charset=utf-8 65.0273ms
+2024-11-09 13:29:15.230 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2024-11-09 13:29:15.231 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0105ms - processed: 0 items - remaining: 2 items
+2024-11-09 13:29:17.867 -04:00 [DBG] Connection id "0HN80SCJLCN48" received FIN.
+2024-11-09 13:29:17.869 -04:00 [DBG] Connection id "0HN80SCJLCN48" is closed. The last processed stream ID was 1.
+2024-11-09 13:29:17.869 -04:00 [DBG] Connection id "0HN80SCJLCN48" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:29:17.870 -04:00 [DBG] The connection queue processing loop for 0HN80SCJLCN48 completed.
+2024-11-09 13:29:17.871 -04:00 [DBG] Connection id "0HN80SCJLCN48" stopped.
+2024-11-09 13:29:25.233 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2024-11-09 13:29:25.234 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0945ms - processed: 0 items - remaining: 2 items
+2024-11-09 13:29:35.245 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2024-11-09 13:29:35.247 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0965ms - processed: 0 items - remaining: 2 items
+2024-11-09 13:29:39.813 -04:00 [DBG] Connection id "0HN80SCJLCN49" received FIN.
+2024-11-09 13:29:39.815 -04:00 [DBG] Connection id "0HN80SCJLCN49" accepted.
+2024-11-09 13:29:39.815 -04:00 [DBG] Connection id "0HN80SCJLCN49" started.
+2024-11-09 13:29:39.843 -04:00 [DBG] Connection id "0HN80SCJLCN4A" accepted.
+2024-11-09 13:29:39.843 -04:00 [DBG] Connection id "0HN80SCJLCN4A" started.
+2024-11-09 13:29:39.844 -04:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-11-09 13:29:39.850 -04:00 [DBG] Connection id "0HN80SCJLCN49" stopped.
+2024-11-09 13:29:39.851 -04:00 [DBG] Connection id "0HN80SCJLCN49" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:29:39.919 -04:00 [DBG] Connection 0HN80SCJLCN4A established using the following protocol: "Tls12"
+2024-11-09 13:29:39.934 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7044/api/v1/start - null null
+2024-11-09 13:29:39.934 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/start'
+2024-11-09 13:29:39.934 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)' with route pattern 'api/v1/start' is valid for the request path '/api/v1/start'
+2024-11-09 13:29:39.934 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:29:39.935 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:29:39.936 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:29:39.936 -04:00 [INF] Route matched with {action = "StartResolution", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartResolution(System.Threading.CancellationToken) on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:29:39.936 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:29:39.937 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:29:39.937 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:29:39.937 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:29:39.937 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:29:39.937 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:29:39.937 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:29:39.938 -04:00 [DBG] Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:29:39.938 -04:00 [DBG] Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:29:39.938 -04:00 [DBG] Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:29:39.938 -04:00 [DBG] Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:29:40.002 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:29:40.002 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:29:40.002 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:29:40.002 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:29:40.002 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-11-09 13:29:40.002 -04:00 [INF] Executing ConflictObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-09 13:29:40.008 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker) in 71.3892ms
+2024-11-09 13:29:40.008 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:29:40.009 -04:00 [DBG] Connection id "0HN80SCJLCN4A" completed keep alive response.
+2024-11-09 13:29:40.009 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7044/api/v1/start - 409 null application/json; charset=utf-8 75.0906ms
+2024-11-09 13:29:45.260 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2024-11-09 13:29:45.262 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0295ms - processed: 0 items - remaining: 2 items
+2024-11-09 13:29:49.374 -04:00 [DBG] Connection id "0HN80SCJLCN4B" accepted.
+2024-11-09 13:29:49.375 -04:00 [DBG] Connection id "0HN80SCJLCN4B" started.
+2024-11-09 13:29:49.499 -04:00 [DBG] Connection 0HN80SCJLCN4B established using the following protocol: "Tls12"
+2024-11-09 13:29:49.622 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7044/api/v1/status - null null
+2024-11-09 13:29:49.623 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/status'
+2024-11-09 13:29:49.623 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)' with route pattern 'api/v1/status' is valid for the request path '/api/v1/status'
+2024-11-09 13:29:49.623 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:29:49.625 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:29:49.625 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:29:49.626 -04:00 [INF] Route matched with {action = "GetResolutionStatus", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetResolutionStatus() on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:29:49.626 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:29:49.626 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:29:49.626 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:29:49.626 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:29:49.626 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:29:49.626 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:29:49.628 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:29:49.628 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:29:49.628 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:29:49.628 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:29:49.629 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:29:49.629 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-11-09 13:29:49.629 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[bet_blocker.DTOs.ResponseHostDto+ResponseHostsDTO, bet-blocker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-09 13:29:49.906 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker) in 279.4781ms
+2024-11-09 13:29:49.906 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:29:49.907 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7044/api/v1/status - 200 null application/json; charset=utf-8 284.6974ms
+2024-11-09 13:29:52.891 -04:00 [DBG] Connection id "0HN80SCJLCN4B" received FIN.
+2024-11-09 13:29:52.893 -04:00 [DBG] Connection id "0HN80SCJLCN4B" is closed. The last processed stream ID was 1.
+2024-11-09 13:29:52.894 -04:00 [DBG] Connection id "0HN80SCJLCN4B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:29:52.895 -04:00 [DBG] The connection queue processing loop for 0HN80SCJLCN4B completed.
+2024-11-09 13:29:52.896 -04:00 [DBG] Connection id "0HN80SCJLCN4B" stopped.
+2024-11-09 13:29:54.486 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7044/api/v1/status - null null
+2024-11-09 13:29:54.487 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/status'
+2024-11-09 13:29:54.487 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)' with route pattern 'api/v1/status' is valid for the request path '/api/v1/status'
+2024-11-09 13:29:54.487 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:29:54.488 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:29:54.488 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:29:54.489 -04:00 [INF] Route matched with {action = "GetResolutionStatus", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetResolutionStatus() on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:29:54.490 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:29:54.490 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:29:54.490 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:29:54.490 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:29:54.490 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:29:54.490 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:29:54.491 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:29:54.491 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:29:54.491 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:29:54.491 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:29:54.492 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:29:54.492 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-11-09 13:29:54.492 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[bet_blocker.DTOs.ResponseHostDto+ResponseHostsDTO, bet-blocker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-09 13:29:54.674 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker) in 183.8113ms
+2024-11-09 13:29:54.674 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:29:54.675 -04:00 [DBG] Connection id "0HN80SCJLCN4A" completed keep alive response.
+2024-11-09 13:29:54.675 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7044/api/v1/status - 200 null application/json; charset=utf-8 189.1303ms
+2024-11-09 13:29:55.269 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2024-11-09 13:29:55.269 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0117ms - processed: 0 items - remaining: 2 items
+2024-11-09 13:30:05.274 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2024-11-09 13:30:05.275 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0377ms - processed: 0 items - remaining: 2 items
+2024-11-09 13:30:15.309 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2024-11-09 13:30:15.311 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0671ms - processed: 0 items - remaining: 2 items
+2024-11-09 13:30:25.314 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2024-11-09 13:30:25.315 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0181ms - processed: 0 items - remaining: 2 items
+2024-11-09 13:30:35.322 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2024-11-09 13:30:35.325 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0499ms - processed: 0 items - remaining: 2 items
+2024-11-09 13:30:45.326 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2024-11-09 13:30:45.328 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0876ms - processed: 0 items - remaining: 2 items
+2024-11-09 13:30:55.330 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2024-11-09 13:30:55.330 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0037ms - processed: 0 items - remaining: 2 items
+2024-11-09 13:30:59.079 -04:00 [DBG] Connection id "0HN80SCJLCN4C" received FIN.
+2024-11-09 13:30:59.154 -04:00 [DBG] Connection id "0HN80SCJLCN4C" accepted.
+2024-11-09 13:30:59.179 -04:00 [DBG] Connection id "0HN80SCJLCN4C" started.
+2024-11-09 13:30:59.205 -04:00 [DBG] Connection id "0HN80SCJLCN4D" accepted.
+2024-11-09 13:30:59.206 -04:00 [DBG] Connection id "0HN80SCJLCN4D" started.
+2024-11-09 13:30:59.207 -04:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-11-09 13:30:59.209 -04:00 [DBG] Connection id "0HN80SCJLCN4C" stopped.
+2024-11-09 13:30:59.211 -04:00 [DBG] Connection id "0HN80SCJLCN4C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:30:59.239 -04:00 [DBG] Connection 0HN80SCJLCN4D established using the following protocol: "Tls12"
+2024-11-09 13:30:59.241 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7044/api/v1/09-11-2024.json - null null
+2024-11-09 13:30:59.242 -04:00 [DBG] No candidates found for the request path '/api/v1/09-11-2024.json'
+2024-11-09 13:30:59.242 -04:00 [DBG] Request did not match any endpoints
+2024-11-09 13:30:59.248 -04:00 [DBG] The request path  does not match the path filter
+2024-11-09 13:30:59.251 -04:00 [DBG] Connection id "0HN80SCJLCN4D" completed keep alive response.
+2024-11-09 13:30:59.251 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7044/api/v1/09-11-2024.json - 404 0 null 9.7876ms
+2024-11-09 13:30:59.255 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7044/api/v1/09-11-2024.json, Response status code: 404
+2024-11-09 13:31:00.166 -04:00 [DBG] HttpMessageHandler expired after 120000ms for client 'ICaller'
+2024-11-09 13:31:05.331 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2024-11-09 13:31:05.332 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0267ms - processed: 0 items - remaining: 3 items
+2024-11-09 13:31:05.770 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7044/api/v1/status - null null
+2024-11-09 13:31:05.771 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/status'
+2024-11-09 13:31:05.771 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)' with route pattern 'api/v1/status' is valid for the request path '/api/v1/status'
+2024-11-09 13:31:05.771 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:31:05.771 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:31:05.771 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:31:05.772 -04:00 [INF] Route matched with {action = "GetResolutionStatus", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetResolutionStatus() on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:31:05.772 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:31:05.772 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:31:05.772 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:31:05.772 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:31:05.772 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:31:05.772 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:31:05.773 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:31:05.773 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:31:05.773 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:31:05.773 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:31:05.773 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:31:05.773 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-11-09 13:31:05.774 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[bet_blocker.DTOs.ResponseHostDto+ResponseHostsDTO, bet-blocker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-09 13:31:05.963 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker) in 190.8297ms
+2024-11-09 13:31:05.963 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:31:05.963 -04:00 [DBG] Connection id "0HN80SCJLCN4D" completed keep alive response.
+2024-11-09 13:31:05.964 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7044/api/v1/status - 200 null application/json; charset=utf-8 193.1473ms
+2024-11-09 13:31:15.334 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2024-11-09 13:31:15.336 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0539ms - processed: 0 items - remaining: 3 items
+2024-11-09 13:31:25.341 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2024-11-09 13:31:25.342 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0603ms - processed: 0 items - remaining: 3 items
+2024-11-09 13:31:35.347 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2024-11-09 13:31:35.351 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0549ms - processed: 0 items - remaining: 3 items
+2024-11-09 13:31:45.353 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2024-11-09 13:31:45.354 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.4665ms - processed: 0 items - remaining: 3 items
+2024-11-09 13:31:55.357 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2024-11-09 13:31:55.358 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0691ms - processed: 0 items - remaining: 3 items
+2024-11-09 13:32:05.360 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2024-11-09 13:32:05.361 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.006ms - processed: 0 items - remaining: 3 items
+2024-11-09 13:32:15.378 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2024-11-09 13:32:15.379 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0413ms - processed: 0 items - remaining: 3 items
+2024-11-09 13:32:25.381 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2024-11-09 13:32:25.390 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.005ms - processed: 0 items - remaining: 3 items
+2024-11-09 13:32:35.393 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2024-11-09 13:32:35.395 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0504ms - processed: 0 items - remaining: 3 items
+2024-11-09 13:32:45.396 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2024-11-09 13:32:45.397 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0148ms - processed: 0 items - remaining: 3 items
+2024-11-09 13:32:55.398 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2024-11-09 13:32:55.399 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0032ms - processed: 0 items - remaining: 3 items
+2024-11-09 13:33:05.402 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2024-11-09 13:33:05.403 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0477ms - processed: 0 items - remaining: 3 items
+2024-11-09 13:33:05.777 -04:00 [DBG] HttpMessageHandler expired after 120000ms for client 'ICaller'
+2024-11-09 13:33:15.404 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:33:15.405 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0034ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:33:25.408 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:33:25.409 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0597ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:33:35.412 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:33:35.414 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0534ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:33:45.419 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:33:45.423 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0499ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:33:55.427 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:33:55.428 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0567ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:34:05.430 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:34:05.431 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.065ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:34:15.434 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:34:15.435 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0435ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:34:25.437 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:34:25.439 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0626ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:34:35.455 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:34:35.470 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.7293ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:34:45.474 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:34:45.475 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0419ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:34:55.478 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:34:55.479 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0385ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:35:05.482 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:35:05.484 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0683ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:35:15.485 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:35:15.486 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0035ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:35:25.493 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:35:25.494 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.01ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:35:35.511 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:35:35.512 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0734ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:35:45.518 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:35:45.520 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.1733ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:35:55.522 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:35:55.524 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0466ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:36:05.529 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:36:05.536 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0788ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:36:15.973 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:36:16.188 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 15.6912ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:36:26.215 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:36:26.222 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0682ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:36:36.226 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:36:36.229 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0394ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:36:46.234 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:36:46.235 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0338ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:36:56.238 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:36:56.239 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.033ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:37:06.241 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:37:06.242 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0364ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:37:16.244 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:37:16.245 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0352ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:37:26.247 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:37:26.248 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0372ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:37:36.250 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:37:36.251 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0384ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:37:46.252 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:37:46.254 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0445ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:37:56.257 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:37:56.259 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0441ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:38:06.262 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:38:06.265 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.1113ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:38:16.269 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:38:16.270 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0404ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:38:26.272 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:38:26.273 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.038ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:38:36.275 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:38:36.276 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0475ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:38:41.468 -04:00 [DBG] Config reload token fired. Checking for changes...
+2024-11-09 13:38:46.285 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:38:46.286 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.035ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:38:56.288 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:38:56.290 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0379ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:39:06.292 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:39:06.294 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0342ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:39:16.296 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:39:16.298 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0535ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:39:26.302 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:39:26.303 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0432ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:39:36.305 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:39:36.306 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0254ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:39:46.308 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:39:46.309 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0236ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:39:56.311 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:39:56.313 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0372ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:40:06.315 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:40:06.316 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0408ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:40:16.318 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:40:16.320 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0421ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:40:26.323 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:40:26.324 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0486ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:40:36.326 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:40:36.328 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0198ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:40:46.330 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:40:46.331 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.022ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:40:56.333 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:40:56.334 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0261ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:41:06.336 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:41:06.338 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.037ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:41:16.340 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:41:16.342 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0297ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:41:26.344 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:41:26.345 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0778ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:41:36.347 -04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 4 items
+2024-11-09 13:41:36.348 -04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0266ms - processed: 0 items - remaining: 4 items
+2024-11-09 13:47:19.362 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-11-09 13:47:19.439 -04:00 [DBG] Hosting starting
+2024-11-09 13:47:19.488 -04:00 [INF] Now listening on: http://localhost:5240
+2024-11-09 13:47:19.488 -04:00 [DBG] Loaded hosting startup assembly bet-blocker
+2024-11-09 13:47:19.489 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-09 13:47:19.490 -04:00 [INF] Hosting environment: Development
+2024-11-09 13:47:19.490 -04:00 [INF] Content root path: /Users/brunohashimoto/Projects/bet-blocker/bet-blocker
+2024-11-09 13:47:19.490 -04:00 [DBG] Hosting started
+2024-11-09 13:47:49.781 -04:00 [DBG] Connection id "0HN80SQGDQEOR" received FIN.
+2024-11-09 13:47:49.788 -04:00 [DBG] Connection id "0HN80SQGDQEOR" accepted.
+2024-11-09 13:47:49.789 -04:00 [DBG] Connection id "0HN80SQGDQEOR" started.
+2024-11-09 13:47:49.791 -04:00 [DBG] Connection id "0HN80SQGDQEOS" accepted.
+2024-11-09 13:47:49.791 -04:00 [DBG] Connection id "0HN80SQGDQEOS" started.
+2024-11-09 13:47:49.803 -04:00 [DBG] Connection id "0HN80SQGDQEOR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:47:49.818 -04:00 [DBG] Connection id "0HN80SQGDQEOS" bad request data: "Detected a TLS handshake to an endpoint that does not have TLS enabled."
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Detected a TLS handshake to an endpoint that does not have TLS enabled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethodLength(ReadOnlySpan`1 span)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySpan`1 requestLine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2024-11-09 13:47:49.822 -04:00 [DBG] Connection id "0HN80SQGDQEOR" disconnecting.
+2024-11-09 13:47:49.859 -04:00 [DBG] Connection id "0HN80SQGDQEOR" stopped.
+2024-11-09 13:47:49.863 -04:00 [DBG] Connection id "0HN80SQGDQEOS" disconnecting.
+2024-11-09 13:47:49.863 -04:00 [DBG] Connection id "0HN80SQGDQEOS" stopped.
+2024-11-09 13:47:49.865 -04:00 [DBG] Connection id "0HN80SQGDQEOS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:48:04.027 -04:00 [DBG] Connection id "0HN80SQGDQEOT" received FIN.
+2024-11-09 13:48:04.035 -04:00 [DBG] Connection id "0HN80SQGDQEOT" accepted.
+2024-11-09 13:48:04.036 -04:00 [DBG] Connection id "0HN80SQGDQEOT" started.
+2024-11-09 13:48:04.036 -04:00 [DBG] Connection id "0HN80SQGDQEOU" accepted.
+2024-11-09 13:48:04.036 -04:00 [DBG] Connection id "0HN80SQGDQEOU" started.
+2024-11-09 13:48:04.037 -04:00 [DBG] Connection id "0HN80SQGDQEOT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:48:04.037 -04:00 [DBG] Connection id "0HN80SQGDQEOT" disconnecting.
+2024-11-09 13:48:04.037 -04:00 [DBG] Connection id "0HN80SQGDQEOT" stopped.
+2024-11-09 13:48:04.068 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5240/api/v1/status - -
+2024-11-09 13:48:04.070 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-11-09 13:48:04.102 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/status'
+2024-11-09 13:48:04.110 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)' with route pattern 'api/v1/status' is valid for the request path '/api/v1/status'
+2024-11-09 13:48:04.111 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:48:04.132 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:48:04.135 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-11-09 13:48:04.137 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:48:04.161 -04:00 [INF] Route matched with {action = "GetResolutionStatus", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetResolutionStatus() on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:48:04.162 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:48:04.162 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:48:04.163 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:48:04.163 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:48:04.163 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:48:04.164 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:48:04.178 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:48:04.184 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:48:04.187 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:48:04.187 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:48:04.187 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:48:04.188 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-11-09 13:48:04.188 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-09 13:48:04.193 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker) in 25.7522ms
+2024-11-09 13:48:04.194 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.GetResolutionStatus (bet-blocker)'
+2024-11-09 13:48:04.194 -04:00 [DBG] Connection id "0HN80SQGDQEOU" completed keep alive response.
+2024-11-09 13:48:04.196 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5240/api/v1/status - - - 200 - text/plain;+charset=utf-8 129.9588ms
+2024-11-09 13:48:12.588 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5240/api/v1/start - -
+2024-11-09 13:48:12.591 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/start'
+2024-11-09 13:48:12.591 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)' with route pattern 'api/v1/start' is valid for the request path '/api/v1/start'
+2024-11-09 13:48:12.591 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:48:12.594 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:48:12.594 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:48:12.618 -04:00 [INF] Route matched with {action = "StartResolution", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartResolution(System.Threading.CancellationToken) on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:48:12.618 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:48:12.618 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:48:12.618 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:48:12.618 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:48:12.619 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:48:12.619 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:48:12.620 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:48:12.623 -04:00 [DBG] Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:48:12.626 -04:00 [DBG] Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:48:12.626 -04:00 [DBG] Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:48:12.630 -04:00 [DBG] Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:48:12.632 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:48:12.633 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:48:12.633 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:48:12.633 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:48:12.633 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-11-09 13:48:12.633 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-09 13:48:12.633 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker) in 14.7359ms
+2024-11-09 13:48:12.634 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:48:12.634 -04:00 [DBG] Connection id "0HN80SQGDQEOU" completed keep alive response.
+2024-11-09 13:48:12.634 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5240/api/v1/start - - - 200 - text/plain;+charset=utf-8 46.6805ms
+2024-11-09 13:48:12.646 -04:00 [INF] Start processing HTTP request GET https://raw.githubusercontent.com/bet-blocker/bet-blocker/main/blocklist.txt
+2024-11-09 13:48:12.647 -04:00 [INF] Sending HTTP request GET https://raw.githubusercontent.com/bet-blocker/bet-blocker/main/blocklist.txt
+2024-11-09 13:48:13.617 -04:00 [INF] Received HTTP response headers after 964.6286ms - 200
+2024-11-09 13:48:13.617 -04:00 [INF] End processing HTTP request after 977.5823ms - 200
+2024-11-09 13:48:56.964 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5240/api/v1/09-11-2024.json - -
+2024-11-09 13:48:56.965 -04:00 [DBG] No candidates found for the request path '/api/v1/09-11-2024.json'
+2024-11-09 13:48:56.966 -04:00 [DBG] Request did not match any endpoints
+2024-11-09 13:48:56.969 -04:00 [DBG] The request path  does not match the path filter
+2024-11-09 13:48:56.972 -04:00 [DBG] Connection id "0HN80SQGDQEOU" completed keep alive response.
+2024-11-09 13:48:56.973 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5240/api/v1/09-11-2024.json - - - 404 0 - 9.2600ms
+2024-11-09 13:49:11.268 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5240/api/v1/dns-resolution/09-11-2024.json - -
+2024-11-09 13:49:11.270 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/dns-resolution/09-11-2024.json'
+2024-11-09 13:49:11.271 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker)' with route pattern 'api/v1/dns-resolution/{date}.json' is valid for the request path '/api/v1/dns-resolution/09-11-2024.json'
+2024-11-09 13:49:11.271 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker)'
+2024-11-09 13:49:11.271 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:49:11.272 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker)'
+2024-11-09 13:49:11.280 -04:00 [INF] Route matched with {action = "GetDnsResolution", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDnsResolution(System.String) on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:49:11.281 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:49:11.281 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:49:11.281 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:49:11.281 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:49:11.282 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:49:11.282 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:49:11.286 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:49:11.287 -04:00 [DBG] Attempting to bind parameter 'date' of type 'System.String' ...
+2024-11-09 13:49:11.288 -04:00 [DBG] Attempting to bind parameter 'date' of type 'System.String' using the name 'date' in request data ...
+2024-11-09 13:49:11.289 -04:00 [DBG] Done attempting to bind parameter 'date' of type 'System.String'.
+2024-11-09 13:49:11.289 -04:00 [DBG] Done attempting to bind parameter 'date' of type 'System.String'.
+2024-11-09 13:49:11.289 -04:00 [DBG] Attempting to validate the bound parameter 'date' of type 'System.String' ...
+2024-11-09 13:49:11.294 -04:00 [DBG] Done attempting to validate the bound parameter 'date' of type 'System.String'.
+2024-11-09 13:49:11.308 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:49:11.308 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:49:11.309 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:49:11.309 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:49:11.309 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-11-09 13:49:11.309 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-09 13:49:11.332 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker) in 49.7072ms
+2024-11-09 13:49:11.332 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker)'
+2024-11-09 13:49:11.333 -04:00 [DBG] Connection id "0HN80SQGDQEOU" completed keep alive response.
+2024-11-09 13:49:11.333 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5240/api/v1/dns-resolution/09-11-2024.json - - - 200 - text/plain;+charset=utf-8 65.4307ms
+2024-11-09 13:49:26.346 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5240/api/v1/dns-resolution/09-11-2024.json - -
+2024-11-09 13:49:26.348 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/dns-resolution/09-11-2024.json'
+2024-11-09 13:49:26.349 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker)' with route pattern 'api/v1/dns-resolution/{date}.json' is valid for the request path '/api/v1/dns-resolution/09-11-2024.json'
+2024-11-09 13:49:26.350 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker)'
+2024-11-09 13:49:26.350 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:49:26.351 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker)'
+2024-11-09 13:49:26.352 -04:00 [INF] Route matched with {action = "GetDnsResolution", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDnsResolution(System.String) on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:49:26.352 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:49:26.352 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:49:26.352 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:49:26.352 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:49:26.353 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:49:26.353 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:49:26.353 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:49:26.354 -04:00 [DBG] Attempting to bind parameter 'date' of type 'System.String' ...
+2024-11-09 13:49:26.354 -04:00 [DBG] Attempting to bind parameter 'date' of type 'System.String' using the name 'date' in request data ...
+2024-11-09 13:49:26.354 -04:00 [DBG] Done attempting to bind parameter 'date' of type 'System.String'.
+2024-11-09 13:49:26.354 -04:00 [DBG] Done attempting to bind parameter 'date' of type 'System.String'.
+2024-11-09 13:49:26.354 -04:00 [DBG] Attempting to validate the bound parameter 'date' of type 'System.String' ...
+2024-11-09 13:49:26.355 -04:00 [DBG] Done attempting to validate the bound parameter 'date' of type 'System.String'.
+2024-11-09 13:49:26.370 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:49:26.370 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:49:26.370 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:49:26.370 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:49:26.370 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-11-09 13:49:26.371 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-09 13:49:26.384 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker) in 30.7673ms
+2024-11-09 13:49:26.385 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker)'
+2024-11-09 13:49:26.405 -04:00 [DBG] Connection id "0HN80SQGDQEOU" completed keep alive response.
+2024-11-09 13:49:26.405 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5240/api/v1/dns-resolution/09-11-2024.json - - - 200 - text/plain;+charset=utf-8 59.5229ms
+2024-11-09 13:49:33.991 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5240/api/v1/start - -
+2024-11-09 13:49:33.992 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/start'
+2024-11-09 13:49:33.993 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)' with route pattern 'api/v1/start' is valid for the request path '/api/v1/start'
+2024-11-09 13:49:33.993 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:49:33.994 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:49:33.994 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:49:33.995 -04:00 [INF] Route matched with {action = "StartResolution", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartResolution(System.Threading.CancellationToken) on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:49:33.995 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:49:33.995 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:49:33.996 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:49:33.996 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:49:33.996 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:49:33.996 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:49:33.997 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:49:33.997 -04:00 [DBG] Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:49:33.998 -04:00 [DBG] Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:49:33.998 -04:00 [DBG] Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2024-11-09 13:49:33.998 -04:00 [DBG] Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2024-11-09 13:49:33.999 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:49:33.999 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:49:33.999 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:49:33.999 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:49:33.999 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-11-09 13:49:33.999 -04:00 [INF] Executing ConflictObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-09 13:49:34.007 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker) in 11.5795ms
+2024-11-09 13:49:34.008 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.StartResolution (bet-blocker)'
+2024-11-09 13:49:34.008 -04:00 [DBG] Connection id "0HN80SQGDQEOU" completed keep alive response.
+2024-11-09 13:49:34.008 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5240/api/v1/start - - - 409 - application/json;+charset=utf-8 17.1758ms
+2024-11-09 13:49:36.953 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5240/api/v1/dns-resolution/09-11-2024.json - -
+2024-11-09 13:49:36.953 -04:00 [DBG] 1 candidate(s) found for the request path '/api/v1/dns-resolution/09-11-2024.json'
+2024-11-09 13:49:36.954 -04:00 [DBG] Endpoint 'bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker)' with route pattern 'api/v1/dns-resolution/{date}.json' is valid for the request path '/api/v1/dns-resolution/09-11-2024.json'
+2024-11-09 13:49:36.954 -04:00 [DBG] Request matched endpoint 'bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker)'
+2024-11-09 13:49:36.954 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-11-09 13:49:36.954 -04:00 [INF] Executing endpoint 'bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker)'
+2024-11-09 13:49:36.954 -04:00 [INF] Route matched with {action = "GetDnsResolution", controller = "APIManager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDnsResolution(System.String) on controller bet_blocker.Controllers.APIManagerController (bet-blocker).
+2024-11-09 13:49:36.955 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-11-09 13:49:36.955 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-11-09 13:49:36.955 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-11-09 13:49:36.955 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-11-09 13:49:36.955 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-11-09 13:49:36.955 -04:00 [DBG] Executing controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:49:36.956 -04:00 [DBG] Executed controller factory for controller bet_blocker.Controllers.APIManagerController (bet-blocker)
+2024-11-09 13:49:36.956 -04:00 [DBG] Attempting to bind parameter 'date' of type 'System.String' ...
+2024-11-09 13:49:36.956 -04:00 [DBG] Attempting to bind parameter 'date' of type 'System.String' using the name 'date' in request data ...
+2024-11-09 13:49:36.956 -04:00 [DBG] Done attempting to bind parameter 'date' of type 'System.String'.
+2024-11-09 13:49:36.956 -04:00 [DBG] Done attempting to bind parameter 'date' of type 'System.String'.
+2024-11-09 13:49:36.956 -04:00 [DBG] Attempting to validate the bound parameter 'date' of type 'System.String' ...
+2024-11-09 13:49:36.956 -04:00 [DBG] Done attempting to validate the bound parameter 'date' of type 'System.String'.
+2024-11-09 13:49:36.966 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-11-09 13:49:36.966 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-11-09 13:49:36.966 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-09 13:49:36.966 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-09 13:49:36.966 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-11-09 13:49:36.967 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-09 13:49:36.970 -04:00 [INF] Executed action bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker) in 14.7722ms
+2024-11-09 13:49:36.970 -04:00 [INF] Executed endpoint 'bet_blocker.Controllers.APIManagerController.GetDnsResolution (bet-blocker)'
+2024-11-09 13:49:36.970 -04:00 [DBG] Connection id "0HN80SQGDQEOU" completed keep alive response.
+2024-11-09 13:49:36.970 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5240/api/v1/dns-resolution/09-11-2024.json - - - 200 - text/plain;+charset=utf-8 17.3405ms
+2024-11-09 13:49:43.902 -04:00 [INF] Application is shutting down...
+2024-11-09 13:49:43.904 -04:00 [DBG] Hosting stopping
+2024-11-09 13:49:43.916 -04:00 [DBG] Connection id "0HN80SQGDQEOU" disconnecting.
+2024-11-09 13:49:43.917 -04:00 [DBG] Connection id "0HN80SQGDQEOU" stopped.
+2024-11-09 13:49:43.918 -04:00 [DBG] Connection id "0HN80SQGDQEOU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-09 13:49:43.921 -04:00 [DBG] Hosting stopped
