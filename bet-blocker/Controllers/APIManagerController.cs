@@ -8,10 +8,12 @@ namespace bet_blocker.Controllers
     public class APIManagerController : ControllerBase
     {
         private readonly IBetBusiness _betBusiness;
+        private readonly string _storagePath;
 
-        public APIManagerController(IBetBusiness betBusiness)
+        public APIManagerController(IBetBusiness betBusiness, IWebHostEnvironment env)
         {
             _betBusiness = betBusiness;
+            _storagePath = Path.Combine(env.ContentRootPath, "json");
         }
 
         [HttpGet("start")]
@@ -31,14 +33,35 @@ namespace bet_blocker.Controllers
         [HttpGet("status")]
         public IActionResult GetResolutionStatus()
         {
-            var status = _betBusiness.GetResolutionStatus();
-
-            if (status is string statusText && statusText == "Processing")
+            try
             {
-                return Ok("Processando... A resolução de DNS ainda está em andamento. Por favor, verifique novamente em breve.");
+                var status = _betBusiness.GetResolutionStatus();
+
+                if (status is string statusText && statusText == "Processing")
+                {
+                    return Ok("Processando... A resolução de DNS ainda está em andamento. Por favor, verifique novamente em breve.");
+                }
+
+                return Ok(status ?? "Nenhum processo iniciado");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Erro interno ao processar a solicitação.", details = ex.Message });
+            }
+        }
+
+        [HttpGet("dns-resolution/{date}.json")]
+        public IActionResult GetDnsResolution(string date)
+        {
+            var filePath = Path.Combine(_storagePath, $"{date}.json");
+
+            if (System.IO.File.Exists(filePath))
+            {
+                var json = System.IO.File.ReadAllText(filePath);
+                return Ok(json);
             }
 
-            return Ok(status ?? "Nenhum processo iniciado");
+            return NotFound("Arquivo não encontrado.");
         }
     }
 }
