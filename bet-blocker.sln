@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1706.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bet-blocker", "bet-blocker\bet-blocker.csproj", "{A1646A9E-F562-4D95-B2DF-385EE695017A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{9F503AC6-2DE6-42CA-8698-78F833A12318}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A1646A9E-F562-4D95-B2DF-385EE695017A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1646A9E-F562-4D95-B2DF-385EE695017A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1646A9E-F562-4D95-B2DF-385EE695017A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F503AC6-2DE6-42CA-8698-78F833A12318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F503AC6-2DE6-42CA-8698-78F833A12318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F503AC6-2DE6-42CA-8698-78F833A12318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F503AC6-2DE6-42CA-8698-78F833A12318}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
