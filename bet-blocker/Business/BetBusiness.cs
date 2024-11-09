@@ -83,6 +83,7 @@ namespace bet_blocker.Business
                 .ToList();
 
             var resolvedHosts = new ConcurrentBag<ResponseHostsDTO>();
+            var semaphore = new SemaphoreSlim(MaxParallelism);
 
             var tasks = blockList.Select(async domain =>
             {
