@@ -50,18 +50,37 @@ namespace bet_blocker.Controllers
             }
         }
 
-        [HttpGet("{date}.json")]
-        public IActionResult GetDnsResolution(string date)
+        [HttpGet("dns")]
+        public IActionResult GetDnsResolution([FromQuery]string? date = null)
         {
-            var filePath = Path.Combine(_storagePath, $"{date}.json");
-
-            if (System.IO.File.Exists(filePath))
+            try
             {
-                var json = System.IO.File.ReadAllText(filePath);
-                return Ok(json);
-            }
+                string filePath;
 
-            return NotFound("Arquivo não encontrado.");
+                if (!string.IsNullOrEmpty(date))
+                {
+                    filePath = Path.Combine(_storagePath, $"{date}.json");
+                }
+                else
+                {
+                    filePath = Directory.GetFiles(_storagePath, "*.json")
+                        .OrderByDescending(f => System.IO.File.GetCreationTimeUtc(f))
+                        .FirstOrDefault() ?? string.Empty;
+                }
+                
+                if (System.IO.File.Exists(filePath))
+                {
+                    var jsonContent = System.IO.File.ReadAllText(filePath);
+                    var jsonObject = System.Text.Json.JsonSerializer.Deserialize<object>(jsonContent);
+
+                    return Ok(jsonObject);
+                }
+                
+                return NotFound(new { message = "Arquivo não encontrado." });
+            } catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Erro interno ao processar a solicitação.", details = ex.Message });
+            }
         }
     }
 }
