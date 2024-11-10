@@ -1,8 +1,10 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
 name: Build and deploy ASP.Net Core app to Azure Web App - webapp-bet-blocker
 
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - main
   workflow_dispatch:
@@ -49,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B507C0A27FC24F18A4AEB5B161EE984E }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_2DE9C62BB58146488C6273CE2A764EC3 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_7AE14C789B9F4D7E84E4F6F17FD9375D }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_318BF777486943DEB193CFA5850DC3A8 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_10FFEC901D194B3F8C875252FA770E1D }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3116864A3F9243BBAD87DBADF6874F83 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
@@ -60,3 +62,4 @@ jobs:
           app-name: 'webapp-bet-blocker'
           slot-name: 'Production'
           package: .
+          
