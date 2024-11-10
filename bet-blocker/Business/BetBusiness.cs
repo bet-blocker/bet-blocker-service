@@ -1,8 +1,10 @@
 ﻿using System.Collections.Concurrent;
 using bet_blocker.Business.Interfaces;
 using Infrastructure.Services.Interfaces;
-using static bet_blocker.DTOs.ResponseHostDto;
 using System.Text.Json;
+using static bet_blocker.DTOs.ResponseHostDto;
+using System.Net;
+using bet_blocker.DTOs;
 
 namespace bet_blocker.Business
 {
@@ -120,6 +122,7 @@ namespace bet_blocker.Business
             {
                 var hostEntry = await System.Net.Dns.GetHostEntryAsync(domain);
                 var ipAddress = hostEntry.AddressList.FirstOrDefault()?.ToString();
+                IPAddress ip = IPAddress.Parse(ipAddress ?? "");
 
                 responseHost.Ips = new Ips
                 {
@@ -127,13 +130,13 @@ namespace bet_blocker.Business
                     ResolvedAt = DateTime.UtcNow
                 };
 
-                responseHost.DNS = new Dns
+                responseHost.DNS = new ResponseHostDto.Dns
                 {
                     Type = hostEntry.AddressList.FirstOrDefault()?.AddressFamily.ToString(),
                     Name = hostEntry.HostName,
                     Host = domain,
                     CanonicalName = hostEntry.HostName,
-                    ReverseDns = ipAddress,
+                    ReverseDns = System.Net.Dns.GetHostEntryAsync(ip).Result.HostName,
                     TTl = "3600",
                     ResolvedAt = DateTime.UtcNow
                 };
