@@ -1,5 +1,6 @@
 using bet_blocker.Business.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 
 namespace bet_blocker.Controllers
 {
@@ -51,36 +52,26 @@ namespace bet_blocker.Controllers
         }
 
         [HttpGet("dns")]
-        public IActionResult GetDnsResolution([FromQuery]string? date = null)
+        public async Task<IActionResult> GetDnsResolution([FromQuery] string? date = null)
         {
             try
             {
-                string filePath;
+                var currentDate = date ?? DateTime.UtcNow.ToString("dd-MM-yyyy");
+                var documents = _betBusiness.GetResolutionStatus();
 
-                if (!string.IsNullOrEmpty(date))
+                if (documents is MongoDB.Bson.BsonDocument bsonDocument)
                 {
-                    filePath = Path.Combine(_storagePath, $"{date}.json");
+                    var jsonResult = MongoDB.Bson.Serialization.BsonSerializer.Deserialize<object>(bsonDocument.ToJson());
+                    return Ok(jsonResult);
                 }
-                else
-                {
-                    filePath = Directory.GetFiles(_storagePath, "*.json")
-                        .OrderByDescending(f => System.IO.File.GetCreationTimeUtc(f))
-                        .FirstOrDefault() ?? string.Empty;
-                }
-                
-                if (System.IO.File.Exists(filePath))
-                {
-                    var jsonContent = System.IO.File.ReadAllText(filePath);
-                    var jsonObject = System.Text.Json.JsonSerializer.Deserialize<object>(jsonContent);
 
-                    return Ok(jsonObject);
-                }
-                
-                return NotFound(new { message = "Arquivo não encontrado." });
-            } catch (Exception ex)
+                return NotFound(new { message = "Nenhum dado encontrado para a data solicitada." });
+            }
+            catch (Exception ex)
             {
                 return StatusCode(500, new { message = "Erro interno ao processar a solicitação.", details = ex.Message });
             }
         }
+
     }
 }
