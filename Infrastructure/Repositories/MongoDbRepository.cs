@@ -16,13 +16,13 @@ public class MongoDbRepository : IMongoDbRepository
             throw new ArgumentNullException(nameof(connectionString), "A variável de ambiente 'MONGO_CONNECTION_STRING' não está configurada.");
         }
 
-        var databaseName = configuration.GetSection("MongoDB:DatabaseName").Value;
+        var databaseName = Environment.GetEnvironmentVariable("MONGO_DATABASE_NAME");
         if (string.IsNullOrEmpty(databaseName))
         {
             throw new ArgumentNullException(nameof(databaseName), "A configuração 'MongoDB:DatabaseName' não está configurada no appsettings.");
         }
 
-        var collectionName = configuration.GetSection("MongoDB:CollectionName").Value;
+        var collectionName = Environment.GetEnvironmentVariable("MONGO_COLLECTION_NAME");
         if (string.IsNullOrEmpty(collectionName))
         {
             throw new ArgumentNullException(nameof(collectionName), "A configuração 'MongoDB:CollectionName' não está configurada no appsettings.");
