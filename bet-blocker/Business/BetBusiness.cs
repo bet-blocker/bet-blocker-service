@@ -1,5 +1,8 @@
 ﻿using System.Collections.Concurrent;
 using bet_blocker.Business.Interfaces;
+using Infrastructure.Repositories.Interfaces;
+using MongoDB.Bson;
+using System.Collections.Concurrent;
 using Infrastructure.Services.Interfaces;
 using static bet_blocker.DTOs.ResponseHostDto;
 using System.Text.Json;
@@ -9,20 +12,15 @@ namespace bet_blocker.Business
     public class BetBusiness : IBetBusiness
     {
         private readonly ICaller _caller;
+        private readonly IMongoDbRepository _mongoDbRepository;
         private readonly string _endpoint;
-        private readonly string _storagePath;
         private static readonly object LockObject = new object();
 
-        public BetBusiness(ICaller caller, IConfiguration configuration)
+        public BetBusiness(ICaller caller, IMongoDbRepository mongoDbRepository, IConfiguration configuration)
         {
             _caller = caller;
+            _mongoDbRepository = mongoDbRepository;
             _endpoint = configuration.GetSection("blockList").Value;
-            _storagePath = configuration.GetSection("StoragePath").Value;
-
-            if (!Directory.Exists(_storagePath))
-            {
-                Directory.CreateDirectory(_storagePath);
-            }
         }
 
         public void StartResolutionProcess(CancellationToken cancellationToken)
@@ -30,37 +28,26 @@ namespace bet_blocker.Business
             lock (LockObject)
             {
                 var currentDate = DateTime.UtcNow.ToString("dd-MM-yyyy");
-                var filePath = Path.Combine(_storagePath, $"{currentDate}.json");
-
-                if (File.Exists(filePath))
+                var existingDocuments = _mongoDbRepository.GetAllDocumentsAsync().Result;
+                if (existingDocuments.Any(doc => doc["Date"] == currentDate))
                 {
                     throw new InvalidOperationException("A resolução de DNS já foi gerada para hoje. Tente novamente amanhã.");
                 }
             }
-
             _ = Task.Run(async () =>
             {
                 try
                 {
                     var resolvedHosts = await GetList(cancellationToken);
                     var currentDate = DateTime.UtcNow.ToString("dd-MM-yyyy");
-
-                    var filePath = Path.Combine(_storagePath, $"{currentDate}.json");
-
-                    var json = JsonSerializer.Serialize(new
+                    var document = new BsonDocument
                     {
-                        Date = currentDate,
-                        ResolvedHosts = resolvedHosts
-                    }, new JsonSerializerOptions { WriteIndented = true });
+                        { "Date", currentDate },
+                        { "ResolvedHosts", new BsonArray(resolvedHosts.Select(host => host.ToBsonDocument())) }
 
-                    File.WriteAllText(filePath, json);
+                    };
 
-                    if (!Directory.Exists(_storagePath))
-                    {
-                        Directory.CreateDirectory(_storagePath);
-                    }
-
-                    File.WriteAllText(filePath, json);
+                    await _mongoDbRepository.InsertDocumentAsync(document);
                 }
                 catch (Exception ex)
                 {
@@ -149,13 +136,12 @@ namespace bet_blocker.Business
         public object GetResolutionStatus()
         {
             var currentDate = DateTime.UtcNow.ToString("dd-MM-yyyy");
-            var filePath = Path.Combine(_storagePath, $"{currentDate}.json");
+            var documents = _mongoDbRepository.GetAllDocumentsAsync().Result;
 
-            if (File.Exists(filePath))
+            var currentDocument = documents.FirstOrDefault(doc => doc["Date"] == currentDate);
+            if (currentDocument != null)
             {
-                var json = File.ReadAllText(filePath);
-                var result = JsonSerializer.Deserialize<object>(json); 
-                return result;
+                return currentDocument;
             }
 
             return "Nenhum processo iniciado ou resolução não encontrada para hoje.";
