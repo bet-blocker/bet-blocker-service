@@ -1,8 +1,11 @@
 using bet_blocker.DependencyInjection;
 using bet_blocker.Extensions;
 using Serilog;
+using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
+
+DotNetEnv.Env.Load(".env");
 
 var logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
