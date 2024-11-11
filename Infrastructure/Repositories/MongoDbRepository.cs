@@ -10,10 +10,23 @@ public class MongoDbRepository : IMongoDbRepository
 
     public MongoDbRepository(IConfiguration configuration)
     {
-        var connectionString = configuration.GetSection("MongoDB:ConnectionString").Value;
-        var databaseName = configuration.GetSection("MongoDB:DatabaseName").Value;
-        var collectionName = configuration.GetSection("MongoDB:CollectionName").Value;
+        var connectionString = Environment.GetEnvironmentVariable("MONGO_CONNECTION_STRING");
+        if (string.IsNullOrEmpty(connectionString))
+        {
+            throw new ArgumentNullException(nameof(connectionString), "A variável de ambiente 'MONGO_CONNECTION_STRING' não está configurada.");
+        }
 
+        var databaseName = configuration.GetSection("MongoDB:DatabaseName").Value;
+        if (string.IsNullOrEmpty(databaseName))
+        {
+            throw new ArgumentNullException(nameof(databaseName), "A configuração 'MongoDB:DatabaseName' não está configurada no appsettings.");
+        }
+
+        var collectionName = configuration.GetSection("MongoDB:CollectionName").Value;
+        if (string.IsNullOrEmpty(collectionName))
+        {
+            throw new ArgumentNullException(nameof(collectionName), "A configuração 'MongoDB:CollectionName' não está configurada no appsettings.");
+        }
         var client = new MongoClient(connectionString);
         var database = client.GetDatabase(databaseName);
         _collection = database.GetCollection<BsonDocument>(collectionName);
