@@ -10,53 +10,65 @@
 
 A API utiliza o método **GET** para listar os dados dos hosts, fornecendo informações detalhadas sobre cada domínio, incluindo seu nome, DNS, protocolos suportados, IPs associados e dados de regulamentação da Anatel.
 
-
 ## Endpoint da API
 
 Sendo a data do dia: exemplo 09-11-2024.json
 
-```txt
-https://bet-blocker.com/api/v1/09-11-2024.json
+## Exemplo curl
+
+```bash
+curl --location "https://bet-blocker.com/api/v1/dns"
 ```
 
-### Estrutura de Retorno (Callback)
+A parametro `date` corresponde a data que desejar obter o registro
+```txt
+https://bet-blocker.com/api/v1/dns?date=11-11-2024
+```
+### Estrutura de retorno previsto (Callback)
 
 Abaixo, a estrutura de dados retornada pela API:
 
 ```json
-[
+{
+"Date": "09-11-2024",
+"ResolvedHosts": [
     {
-        "name": "001game9",
-        "host": "001game9.com",
-        "dns": {
-            "type": "CNAME",
-            "name": "001game9",
-            "reverse_dns": "",
-            "canonical_name": "",
-            "ttl": "",
-            "resolved_at": ""
+        "Name": "a5sbet.com",
+        "Host": "a5sbet.com",
+        "DNS": {
+            "Type": "InterNetwork",
+            "Name": "a5sbet.com",
+            "Host": "a5sbet.com",
+            "ReverseDns": "104.21.42.168",
+            "CanonicalName": "a5sbet.com",
+            "TTl": "3600",
+            "ResolvedAt": "2024-11-09T17:48:37.149205Z"
         },
-        "protocols": {
-            "https": true,
-            "http": false
+        "Protocols": {
+            "Https": true,
+            "Http": true
         },
-        "ips": {
-            "ip": "127.0.0.1",
-            "resolved": ""
+        "Ips": {
+            "Ip": "104.21.42.168",
+            "ResolvedAt": "2024-11-09T17:48:37.149204Z"
         },
-        "anatel": [
-            {
-                "urlFull": "https://www.gov.br/anatel/pt-br/regulado/fiscalizacao/planilha_operacao_url20241011_09_10-1.pdf",
-                "url": "https://www.gov.br/anatel/pt-br/regulado/fiscalizacao",
-                "file": "planilha_operacao_url20241011_09_10-1.pdf",
-                "date": "20241011",
-                "hour": "09_10-1",
-                "mime": "pdf"
-            }
-        ],
-        "checked_at": "2024-11-08 00:00:00",
-        "insert_at": "2024-11-08 00:00:00",
-        "updated_at": "2024-11-08 00:00:00"
+        "Anatel": {
+            "AnatelInfo": {
+                "UrlFull": null,
+                "Url": null,
+                "File": null,
+                "Date": "11/9/2024",
+                "Hour": "5:48PM",
+                "Mime": "application/json"
+            },
+            "CheckedAt": "2024-11-09T17:48:13.770764Z",
+            "InsertAt": "2024-11-09T17:48:13.770765Z",
+            "UpdatedAt": "2024-11-09T17:48:13.770765Z"
+        }
     },
-    ...
-]
+    .......
+    ]
+}
+```
+
+# Essa API é pública e gratuita
