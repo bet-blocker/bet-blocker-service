@@ -22,6 +22,7 @@
     <None Remove="Business\Interfaces\" />
     <None Remove="DependencyInjection\" />
     <None Remove="Extensions\" />
+    <None Remove="Json\**" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DTOs\" />
@@ -34,5 +35,17 @@
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Json\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Json\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Json\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Json\09-11-2024.json" />
   </ItemGroup>
 </Project>

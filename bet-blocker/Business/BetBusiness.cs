@@ -2,9 +2,7 @@
 using bet_blocker.Business.Interfaces;
 using Infrastructure.Repositories.Interfaces;
 using MongoDB.Bson;
-using System.Collections.Concurrent;
 using Infrastructure.Services.Interfaces;
-using System.Text.Json;
 using static bet_blocker.DTOs.ResponseHostDto;
 using System.Net;
 using bet_blocker.DTOs;
@@ -16,7 +14,7 @@ namespace bet_blocker.Business
         private readonly ICaller _caller;
         private readonly IMongoDbRepository _mongoDbRepository;
         private readonly string _endpoint;
-        private static readonly object LockObject = new object();
+        private static readonly object LockObject = new ();
 
         public BetBusiness(ICaller caller, IMongoDbRepository mongoDbRepository, IConfiguration configuration)
         {

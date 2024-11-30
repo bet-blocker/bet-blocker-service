@@ -9,15 +9,13 @@ namespace bet_blocker.Controllers
     public class APIManagerController : ControllerBase
     {
         private readonly IBetBusiness _betBusiness;
-        private readonly string _storagePath;
 
         public APIManagerController(IBetBusiness betBusiness, IWebHostEnvironment env)
         {
             _betBusiness = betBusiness;
-            _storagePath = Path.Combine(env.ContentRootPath, "json");
         }
 
-        [HttpGet("start")]
+        [HttpPost("start")]
         public IActionResult StartResolution(CancellationToken cancellationToken)
         {
             try
