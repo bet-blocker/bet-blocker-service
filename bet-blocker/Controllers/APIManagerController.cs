@@ -29,26 +29,6 @@ namespace bet_blocker.Controllers
             }
         }
 
-        [HttpGet("status")]
-        public IActionResult GetResolutionStatus()
-        {
-            try
-            {
-                var status = _betBusiness.GetResolutionStatus();
-
-                if (status is string statusText && statusText == "Processing")
-                {
-                    return Ok("Processando... A resolução de DNS ainda está em andamento. Por favor, verifique novamente em breve.");
-                }
-
-                return Ok(status ?? "Nenhum processo iniciado");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "Erro interno ao processar a solicitação.", details = ex.Message });
-            }
-        }
-
         [HttpGet("dns")]
         public async Task<IActionResult> GetDnsResolution([FromQuery] string? date = null)
         {
