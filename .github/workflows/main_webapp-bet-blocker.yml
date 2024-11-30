@@ -13,6 +13,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      MongoDB__ConnectionString: ${{ secrets.MONGODB_CONNECTIONSTRING }}
+      MongoDB__DatabaseName: ${{ secrets.MONGODB_DATABASENAME }}
+      MongoDB__CollectionName: ${{ secrets.MONGODB_COLLECTIONNAME }}
+
     steps:
       - uses: actions/checkout@v4
 
