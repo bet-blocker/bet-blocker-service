@@ -47,12 +47,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: .net-app
-
-      - name: Set MongoDB Environment Variables
-        run: |
-          echo "MongoDB__ConnectionString=${{ secrets.MONGODB_CONNECTIONSTRING }}" >> $GITHUB_ENV
-          echo "MongoDB__DatabaseName=${{ secrets.MONGODB_DATABASENAME }}" >> $GITHUB_ENV
-          echo "MongoDB__CollectionName=${{ secrets.MONGODB_COLLECTIONNAME }}" >> $GITHUB_ENV
       
       - name: Login to Azure
         uses: azure/login@v2
