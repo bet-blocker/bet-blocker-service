@@ -8,9 +8,25 @@
 
 ## Recursos da API
 
-A API utiliza o método **GET** para listar os dados dos hosts, fornecendo informações detalhadas sobre cada domínio, incluindo seu nome, DNS, protocolos suportados, IPs associados e dados de regulamentação da Anatel.
 
-## Endpoint da API
+## Iniciando uma resolução
+
+### [POST] Start
+
+Para iniciar uma resolução utilize  
+
+```bash
+curl --location "https://bet-blocker.com/api/v1/start"
+```
+
+Feito isso o sistema irá iniciar um job para gerar as resoluções para cada domínio informado.
+
+Importante mencionar que após iniciado não será possível interromper ou começar outro, será possível iniciar uma resolução por dia.
+
+Após gerado acesse o endpoint [GET] DNS.
+
+### [GET] DNS
+A API utiliza o método **GET** para listar os dados dos hosts, fornecendo informações detalhadas sobre cada domínio, incluindo seu nome, DNS, protocolos suportados, IPs associados e dados de regulamentação da Anatel.
 
 Sendo a data do dia: exemplo 09-11-2024.json
 
@@ -26,48 +42,61 @@ https://bet-blocker.com/api/v1/dns?date=11-11-2024
 ```
 ### Estrutura de retorno previsto (Callback)
 
-Abaixo, a estrutura de dados retornada pela API:
+Abaixo, o contrato retornada pela API:
 
-```json
+```bash
+public class ResponseHostDto
 {
-"Date": "09-11-2024",
-"ResolvedHosts": [
+    public class ResponseHostsDTO
     {
-        "Name": "a5sbet.com",
-        "Host": "a5sbet.com",
-        "DNS": {
-            "Type": "InterNetwork",
-            "Name": "a5sbet.com",
-            "Host": "a5sbet.com",
-            "ReverseDns": "104.21.42.168",
-            "CanonicalName": "a5sbet.com",
-            "TTl": "3600",
-            "ResolvedAt": "2024-11-09T17:48:37.149205Z"
-        },
-        "Protocols": {
-            "Https": true,
-            "Http": true
-        },
-        "Ips": {
-            "Ip": "104.21.42.168",
-            "ResolvedAt": "2024-11-09T17:48:37.149204Z"
-        },
-        "Anatel": {
-            "AnatelInfo": {
-                "UrlFull": null,
-                "Url": null,
-                "File": null,
-                "Date": "11/9/2024",
-                "Hour": "5:48PM",
-                "Mime": "application/json"
-            },
-            "CheckedAt": "2024-11-09T17:48:13.770764Z",
-            "InsertAt": "2024-11-09T17:48:13.770765Z",
-            "UpdatedAt": "2024-11-09T17:48:13.770765Z"
-        }
-    },
-    .......
-    ]
+        public string? Name { get; set; }
+        public string? Host { get; set; }
+        public Dns? DNS { get; set; }
+        public Protocols Protocols { get; set; }
+        public Ips Ips { get; set; }
+        public Anatel Anatel { get; set; }
+    }
+
+    public class Anatel
+    {
+        public AnatelInfo AnatelInfo { get; set; }
+        public DateTime CheckedAt { get; set; }
+        public DateTime InsertAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+    }
+
+    public class AnatelInfo
+    {
+        public string? UrlFull { get; set; }
+        public string? Url { get; set; }
+        public string? File { get; set; }
+        public string? Date { get; set; }
+        public string? Hour { get; set; }
+        public string? Mime { get; set; }
+    }
+
+    public class Ips
+    {
+        public string? Ip { get; set; }
+        public DateTime ResolvedAt { get; set; }
+    }
+
+    public class Protocols
+    {
+        public bool Https { get; set; }
+        public bool Http { get; set; }
+    }
+
+    public class Dns
+    {
+        public string? Type { get; set; }
+        public string? Name { get; set; }
+        public string? Host { get; set; }
+        public string? ReverseDns { get; set; }
+        public string? CanonicalName { get; set; }
+        public string? TTl { get; set; }
+        public DateTime ResolvedAt { get; set; }
+    }
 }
 ```
 
