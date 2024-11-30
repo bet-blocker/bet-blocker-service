@@ -62,4 +62,10 @@ jobs:
           app-name: 'webapp-bet-blocker'
           slot-name: 'Production'
           package: .
+
+      - name: Set MongoDB Environment Variables
+        run: |
+          echo "MONGODB_CONNECTIONSTRING=${{ secrets.MONGODB_CONNECTIONSTRING }}" >> $GITHUB_ENV
+          echo "MONGODB_DATABASENAME=${{ secrets.MONGODB_DATABASENAME }}" >> $GITHUB_ENV
+          echo "MONGODB_COLLECTIONNAME=${{ secrets.MONGODB_COLLECTIONNAME }}" >> $GITHUB_ENV
           
