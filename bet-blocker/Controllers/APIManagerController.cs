@@ -1,8 +1,8 @@
-using bet_blocker.Business.Interfaces;
+using System.Text.Json;
+using Application.Business.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using MongoDB.Bson;
 
-namespace bet_blocker.Controllers
+namespace Application.Controllers
 {
     [ApiController]
     [Route("api/v1")]
@@ -10,7 +10,7 @@ namespace bet_blocker.Controllers
     {
         private readonly IBetBusiness _betBusiness;
 
-        public APIManagerController(IBetBusiness betBusiness, IWebHostEnvironment env)
+        public APIManagerController(IBetBusiness betBusiness)
         {
             _betBusiness = betBusiness;
         }
@@ -20,10 +20,27 @@ namespace bet_blocker.Controllers
         {
             try
             {
+                var filePath = $"Json/{DateTime.UtcNow:dd-MM-yyyy}.json";
+
+                if (_betBusiness.IsResolutionInProgress && System.IO.File.Exists(filePath))
+                {
+                    return Ok(new { message = $"The file is already in progress", progress = $"{_betBusiness.GetStatus():F2}%" });
+                }
+                else if (!_betBusiness.IsResolutionInProgress && System.IO.File.Exists(filePath))
+                {
+                    return Ok(new { message = $"The file {filePath} already exists. Data was not recreated." });
+                }
+
+                if (_betBusiness.IsResolutionInProgress)
+                {
+                    return Ok(new { message = $"A resolution is already in progress.", progress = $"{_betBusiness.GetStatus():F2}%" });
+                }
+
                 _betBusiness.StartResolutionProcess(cancellationToken);
-                return Ok("A resolução de DNS foi iniciada. Verifique o status com /status.");
+
+                return Ok(new { message = "DNS resolution has started." });
             }
-            catch (InvalidOperationException ex)
+            catch (Exception ex)
             {
                 return Conflict(new { message = ex.Message });
             }
@@ -35,15 +52,20 @@ namespace bet_blocker.Controllers
             try
             {
                 var currentDate = date ?? DateTime.UtcNow.ToString("dd-MM-yyyy");
-                var documents = _betBusiness.GetResolutionStatus();
 
-                if (documents is MongoDB.Bson.BsonDocument bsonDocument)
+                var filePath = $"Json/{currentDate}.json";
+
+                if (System.IO.File.Exists(filePath))
                 {
-                    var jsonResult = MongoDB.Bson.Serialization.BsonSerializer.Deserialize<object>(bsonDocument.ToJson());
-                    return Ok(jsonResult);
-                }
+                    var fileContent = await System.IO.File.ReadAllTextAsync(filePath);
+                    var data = JsonSerializer.Deserialize<object>(fileContent);
 
-                return NotFound(new { message = "Nenhum dado encontrado para a data solicitada." });
+                    return Ok(data);
+                }
+                else
+                {
+                    return BadRequest("The referenced file does not exist in our database.");
+                }
             }
             catch (Exception ex)
             {

@@ -1,8 +1,8 @@
 ﻿using System.Text;
 using System.Text.Json;
-using Infrastructure.Services.Interfaces;
+using Application.Services.Interfaces;
 
-namespace Infrastructure.Services
+namespace Application.Services
 {
     public class Caller : ICaller
     {

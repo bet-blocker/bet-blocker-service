@@ -1,16 +1,12 @@
-using bet_blocker.DependencyInjection;
-using bet_blocker.Extensions;
+using Application.DependencyInjection;
+using Application.Extensions;
 using Serilog;
-using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
-
-DotNetEnv.Env.Load(".env");
 
 var logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
     .WriteTo.Console()
-    .WriteTo.File("log.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
 builder.Services.AddMemoryCache(); 

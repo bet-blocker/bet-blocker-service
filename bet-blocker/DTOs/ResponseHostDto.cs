@@ -1,4 +1,4 @@
-﻿namespace bet_blocker.DTOs
+﻿namespace Application.DTOs
 {
     public class ResponseHostDto
     {

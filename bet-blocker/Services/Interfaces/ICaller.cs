@@ -1,4 +1,4 @@
-﻿namespace Infrastructure.Services.Interfaces
+﻿namespace Application.Services.Interfaces
 {
     public interface ICaller
     {
