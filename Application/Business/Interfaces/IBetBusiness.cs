@@ -2,8 +2,10 @@
 {
     public interface IBetBusiness
     {
-        double GetStatus();
         Task StartResolutionProcess(CancellationToken cancellationToken);
+        Task<List<string>> GetBlocklistGithub();
+        double GetStatus();
+
         bool IsResolutionInProgress { get; }
     }
 }
