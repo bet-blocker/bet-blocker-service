@@ -16,7 +16,7 @@
 Para iniciar uma resolução utilize  
 
 ```bash
-curl --location "https://bet-blocker.com/api/v1/start"
+curl --location "https://api.bet-blocker.com/v1/start"
 ```
 
 Feito isso o sistema irá iniciar um job para gerar as resoluções para cada domínio informado.
@@ -33,19 +33,18 @@ Sendo a data do dia: exemplo 09-11-2024.json
 ## Exemplo curl
 
 ```bash
-curl --location "https://bet-blocker.com/api/v1/dns"
+curl --location "https://api.bet-blocker.com/v1/dns"
 ```
 
 A parametro `date` corresponde a data que desejar obter o registro
 ```txt
-https://bet-blocker.com/api/v1/dns?date=11-11-2024
+https://api.bet-blocker.com/v1/dns?date=05-12-2024
 ```
 ### Estrutura de retorno previsto (Callback)
 
 Abaixo, o contrato retornada pela API:
 
 ```bash
-public class ResponseHostDto
 {
     public class ResponseHostsDTO
     {
@@ -54,25 +53,6 @@ public class ResponseHostDto
         public Dns? DNS { get; set; }
         public Protocols Protocols { get; set; }
         public Ips Ips { get; set; }
-        public Anatel Anatel { get; set; }
-    }
-
-    public class Anatel
-    {
-        public AnatelInfo AnatelInfo { get; set; }
-        public DateTime CheckedAt { get; set; }
-        public DateTime InsertAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
-    }
-
-    public class AnatelInfo
-    {
-        public string? UrlFull { get; set; }
-        public string? Url { get; set; }
-        public string? File { get; set; }
-        public string? Date { get; set; }
-        public string? Hour { get; set; }
-        public string? Mime { get; set; }
     }
 
     public class Ips
@@ -93,7 +73,6 @@ public class ResponseHostDto
         public string? Name { get; set; }
         public string? Host { get; set; }
         public string? ReverseDns { get; set; }
-        public string? CanonicalName { get; set; }
         public string? TTl { get; set; }
         public DateTime ResolvedAt { get; set; }
     }
