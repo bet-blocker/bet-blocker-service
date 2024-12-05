@@ -1,100 +1,134 @@
-﻿using System.Collections.Concurrent;
-using bet_blocker.Business.Interfaces;
-using Infrastructure.Repositories.Interfaces;
-using MongoDB.Bson;
-using Infrastructure.Services.Interfaces;
-using static bet_blocker.DTOs.ResponseHostDto;
-using System.Net;
-using bet_blocker.DTOs;
+﻿using System.Net;   
+using System.Text.Json;
+using Application.Business.Interfaces;
+using Application.Services.Interfaces;
+using static Application.DTOs.ResponseHostDto;
+using DNSDto = Application.DTOs.ResponseHostDto.Dns;
+using System.Net.Sockets;
 
-namespace bet_blocker.Business
+namespace Application.Business
 {
     public class BetBusiness : IBetBusiness
     {
         private readonly ICaller _caller;
-        private readonly IMongoDbRepository _mongoDbRepository;
-        private readonly string _endpoint;
-        private static readonly object LockObject = new ();
+        private readonly string _blockList;
+        private double _progress;
+        private bool _isResolutionInProgress;
 
-        public BetBusiness(ICaller caller, IMongoDbRepository mongoDbRepository, IConfiguration configuration)
+        public BetBusiness(ICaller caller, IConfiguration configuration)
         {
             _caller = caller;
-            _mongoDbRepository = mongoDbRepository;
-            _endpoint = configuration.GetSection("blockList").Value;
+            _blockList = configuration.GetSection("blockList").Value;
+            _progress = 0;
+            _isResolutionInProgress = false;
         }
 
-        public void StartResolutionProcess(CancellationToken cancellationToken)
+        public double GetStatus()
         {
-            lock (LockObject)
+            return _progress; 
+        }
+
+        public bool IsResolutionInProgress => _isResolutionInProgress;
+
+        public async Task StartResolutionProcess(CancellationToken cancellationToken)
+        {
+            if (_isResolutionInProgress)
             {
-                var currentDate = DateTime.UtcNow.ToString("dd-MM-yyyy");
-                var existingDocuments = _mongoDbRepository.GetAllDocumentsAsync().Result;
-                if (existingDocuments.Any(doc => doc["Date"] == currentDate))
-                {
-                    throw new InvalidOperationException("A resolução de DNS já foi gerada para hoje. Tente novamente amanhã.");
-                }
+                throw new Exception($"Uma resolução já está em andamento. Progresso atual: {_progress:F2}%");
             }
-            _ = Task.Run(async () =>
+
+            _isResolutionInProgress = true;
+
+            try
             {
-                try
+                var blocklist = await GetBlocklistGithub();
+                var totalDomains = blocklist.Count;
+                var date = DateTime.UtcNow.ToString("dd-MM-yyyy");
+                var filePath = $"Json/{date}.json";
+
+                if (!File.Exists(filePath))
                 {
-                    var resolvedHosts = await GetList(cancellationToken);
-                    var currentDate = DateTime.UtcNow.ToString("dd-MM-yyyy");
-                    var document = new BsonDocument
+                    var initialData = new List<ResponseHostsDTO>(); 
+                    var initialJson = JsonSerializer.Serialize(initialData, new JsonSerializerOptions { WriteIndented = true });
+                    await File.WriteAllTextAsync(filePath, initialJson, cancellationToken);
+                }
+
+                int processedCount = 0;
+
+                foreach (var item in blocklist)
+                {
+                    try
                     {
-                        { "Date", currentDate },
-                        { "ResolvedHosts", new BsonArray(resolvedHosts.Select(host => host.ToBsonDocument())) }
+                        var responseHost = await ResolveDnsForHost(item);
+                        if (responseHost != null)
+                        {
+                            var existingData = JsonSerializer.Deserialize<List<ResponseHostsDTO>>(await File.ReadAllTextAsync(filePath));
+                            existingData.Add(responseHost);
+                            var updatedJson = JsonSerializer.Serialize(existingData, new JsonSerializerOptions { WriteIndented = true });
 
-                    };
+                            await File.WriteAllTextAsync(filePath, updatedJson, cancellationToken);
+                        }
+                    }
+                    catch (SocketException ex)
+                    {
+                        Console.WriteLine($"Erro ao resolver DNS reverso para o IP {item}: {ex.Message}");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Erro inesperado ao resolver DNS para o IP {item}: {ex.Message}");
+                    }
 
-                    await _mongoDbRepository.InsertDocumentAsync(document);
+                    processedCount++;
+                    _progress = (double)processedCount / totalDomains * 100;
+                    Console.WriteLine($"Progresso: {_progress:F2}% concluído.");
+
+                    cancellationToken.ThrowIfCancellationRequested();
                 }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Erro durante a resolução de DNS: {ex.Message}");
-                }
-            }, cancellationToken);
+
+                Console.WriteLine($"Arquivo {filePath} atualizado com sucesso.");
+            }
+            finally
+            {
+                _isResolutionInProgress = false;
+            }
         }
 
-        public async Task<List<ResponseHostsDTO>> GetList(CancellationToken cancellationToken)
+        public async Task<List<string>> GetBlocklistGithub()
         {
-            var response = await _caller.Call(_endpoint, HttpMethod.Get);
+            var response = await _caller.Call(_blockList, HttpMethod.Get);
 
-            var blockList = response
+            return response
                 .Split('\n', StringSplitOptions.RemoveEmptyEntries)
                 .Select(domain => domain.Trim())
                 .ToList();
-
-            var resolvedHosts = new ConcurrentBag<ResponseHostsDTO>();
-
-            var tasks = blockList.Select(async domain =>
-            {
-                if (cancellationToken.IsCancellationRequested)
-                {
-                    return;
-                }
-                var hostDto = await ResolveDomainInfo(domain);
-                resolvedHosts.Add(hostDto);
-            });
-
-            await Task.WhenAll(tasks);
-
-            return resolvedHosts.ToList();
         }
 
-        private static async Task<ResponseHostsDTO> ResolveDomainInfo(string domain)
+        private static async Task<ResponseHostsDTO> ResolveDnsForHost(string domain)
         {
             var responseHost = new ResponseHostsDTO
             {
                 Name = domain,
                 Host = domain,
-                Protocols = new Protocols { Http = true, Https = true },
+                DNS = new DNSDto
+                {
+                    Name = domain,
+                    ResolvedAt = DateTime.UtcNow
+                },
+                Protocols = new Protocols
+                {
+                    Https = false,
+                    Http = false
+                },
+                Ips = new Ips
+                {
+                    ResolvedAt = DateTime.UtcNow
+                },
                 Anatel = new Anatel
                 {
                     AnatelInfo = new AnatelInfo
                     {
-                        Date = DateTime.UtcNow.ToShortDateString(),
-                        Hour = DateTime.UtcNow.ToShortTimeString(),
+                        UrlFull = $"http://{domain}",
+                        Url = $"http://{domain}",
                         Mime = "application/json"
                     },
                     CheckedAt = DateTime.UtcNow,
@@ -105,47 +139,73 @@ namespace bet_blocker.Business
 
             try
             {
-                var hostEntry = await System.Net.Dns.GetHostEntryAsync(domain);
-                var ipAddress = hostEntry.AddressList.FirstOrDefault()?.ToString();
-                IPAddress ip = IPAddress.Parse(ipAddress ?? "");
+                var uri = new Uri(domain.StartsWith("http") ? domain : $"http://{domain}");
+                var cleanDomain = uri.Host;
 
-                responseHost.Ips = new Ips
-                {
-                    Ip = ipAddress,
-                    ResolvedAt = DateTime.UtcNow
-                };
+                var isIp = IsValidIp(cleanDomain);
+                IPAddress ip = null;
 
-                responseHost.DNS = new ResponseHostDto.Dns
+                if (!isIp)
                 {
-                    Type = hostEntry.AddressList.FirstOrDefault()?.AddressFamily.ToString(),
-                    Name = hostEntry.HostName,
-                    Host = domain,
-                    CanonicalName = hostEntry.HostName,
-                    ReverseDns = System.Net.Dns.GetHostEntryAsync(ip).Result.HostName,
-                    TTl = "3600",
-                    ResolvedAt = DateTime.UtcNow
-                };
+                    var hostEntry = await System.Net.Dns.GetHostEntryAsync(domain);
+                    ip = hostEntry.AddressList.FirstOrDefault();
+                }
+                else
+                {
+                    ip = IPAddress.Parse(cleanDomain);
+                }
+
+                if (ip != null)
+                {
+                    responseHost.Ips.Ip = ip.ToString();
+                }
+                else
+                {
+                    responseHost.Ips.Ip = "0.0.0.0";
+                }
+
+                if (ip != null && ip.ToString() != "0.0.0.0")
+                {
+                    responseHost.DNS.ReverseDns = System.Net.Dns.GetHostEntryAsync(ip).Result.HostName;
+                }
+                else
+                {
+                    responseHost.DNS.ReverseDns = "N/A";
+                }
+
+                responseHost.DNS.Type = "A";
+                responseHost.DNS.Host = isIp ? ip.ToString() : cleanDomain;
+
+                if (string.IsNullOrEmpty(responseHost.Ips.Ip) || string.IsNullOrEmpty(responseHost.DNS.Host))
+                {
+                    Console.WriteLine($"Informações incompletas para o domínio: {domain}");
+                    responseHost.Ips.Ip = "N/A";
+                    responseHost.DNS.Host = "N/A";
+                }
+
+                return responseHost;
+            }
+            catch (SocketException ex)
+            {
+                Console.WriteLine($"Erro ao resolver DNS para {domain}: {ex.Message}");
+                responseHost.Ips.Ip = "N/A";
+                responseHost.DNS.Host = "N/A";
+                responseHost.DNS.ReverseDns = "N/A";
+                return responseHost; 
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Erro ao resolver {domain}: {ex.Message}");
+                Console.WriteLine($"Erro desconhecido ao resolver DNS para {domain}: {ex.Message}");
+                responseHost.Ips.Ip = "N/A";
+                responseHost.DNS.Host = "N/A";
+                responseHost.DNS.ReverseDns = "N/A";
+                return responseHost; 
             }
-
-            return responseHost;
         }
 
-        public object GetResolutionStatus()
+        private static bool IsValidIp(string ipString)
         {
-            var currentDate = DateTime.UtcNow.ToString("dd-MM-yyyy");
-            var documents = _mongoDbRepository.GetAllDocumentsAsync().Result;
-
-            var currentDocument = documents.FirstOrDefault(doc => doc["Date"] == currentDate);
-            if (currentDocument != null)
-            {
-                return currentDocument;
-            }
-
-            return "Nenhum processo iniciado ou resolução não encontrada para hoje.";
+            return IPAddress.TryParse(ipString, out _);
         }
     }
 }

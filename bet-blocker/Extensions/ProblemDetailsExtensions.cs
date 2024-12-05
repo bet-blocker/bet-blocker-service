@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 
-namespace bet_blocker.Extensions
+namespace Application.Extensions
 {
     public static class ProblemDetailsExtensions
     {
