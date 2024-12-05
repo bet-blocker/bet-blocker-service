@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Application.Controllers
 {
     [ApiController]
-    [Route("api/v1")]
+    [Route("v1")]
     public class APIManagerController : ControllerBase
     {
         private readonly IBetBusiness _betBusiness;
