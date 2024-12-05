@@ -69,9 +69,23 @@ namespace Application.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = "Erro interno ao processar a solicitação.", details = ex.Message });
+                return StatusCode(500, new { message = "Internal error while processing the request.", details = ex.Message });
             }
         }
 
+        [HttpGet("domains")]
+        public async Task<IActionResult> GetDomains()
+        {
+            try
+            {
+                var domains = await _betBusiness.GetBlocklistGithub();
+
+                return Ok(new { Date = DateTime.UtcNow.ToString("dd-MM-yyyy"), Domains = domains });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Internal error while processing the request.", details = ex.Message });
+            }
+        }
     }
 }
