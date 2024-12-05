@@ -64,7 +64,7 @@ namespace Application.Controllers
                 }
                 else
                 {
-                    return BadRequest("The referenced file does not exist in our database.");
+                    return BadRequest(new { message = "The referenced file does not exist in our database." });
                 }
             }
             catch (Exception ex)

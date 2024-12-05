@@ -122,18 +122,6 @@ namespace Application.Business
                 Ips = new Ips
                 {
                     ResolvedAt = DateTime.UtcNow
-                },
-                Anatel = new Anatel
-                {
-                    AnatelInfo = new AnatelInfo
-                    {
-                        UrlFull = $"http://{domain}",
-                        Url = $"http://{domain}",
-                        Mime = "application/json"
-                    },
-                    CheckedAt = DateTime.UtcNow,
-                    InsertAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
                 }
             };
 
