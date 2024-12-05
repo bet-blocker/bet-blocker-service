@@ -8,7 +8,6 @@
 
 ## Recursos da API
 
-
 ## Iniciando uma resolução
 
 ### [POST] Start
@@ -24,6 +23,13 @@ Feito isso o sistema irá iniciar um job para gerar as resoluções para cada do
 Importante mencionar que após iniciado não será possível interromper ou começar outro, será possível iniciar uma resolução por dia.
 
 Após gerado acesse o endpoint [GET] DNS.
+
+### [GET] DOMAINS
+A API utiliza o método **GET** para listar os dados dos dominios registrados na base de dados
+
+```bash
+curl --location "https://api.bet-blocker.com/v1/domains"
+```
 
 ### [GET] DNS
 A API utiliza o método **GET** para listar os dados dos hosts, fornecendo informações detalhadas sobre cada domínio, incluindo seu nome, DNS, protocolos suportados, IPs associados e dados de regulamentação da Anatel.
