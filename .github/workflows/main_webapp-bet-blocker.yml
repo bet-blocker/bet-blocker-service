@@ -12,14 +12,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-  
+
     steps:
       - uses: actions/checkout@v4
 
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '7.x'
+          dotnet-version: '8.x'
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
@@ -51,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_318BF777486943DEB193CFA5850DC3A8 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_10FFEC901D194B3F8C875252FA770E1D }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3116864A3F9243BBAD87DBADF6874F83 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_1C13470DD88B4FCCAB18847BB7A4AE7D }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_594E158F2AB849BD8833F56C4CA4E2A5 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_ED5E20119D184116BB73C43550AE5900 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
@@ -62,3 +62,4 @@ jobs:
           app-name: 'webapp-bet-blocker'
           slot-name: 'Production'
           package: .
+          
