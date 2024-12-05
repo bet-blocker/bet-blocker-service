@@ -1,0 +1,2892 @@
+[
+  {
+    "Name": "br.betano.com",
+    "Host": "br.betano.com",
+    "DNS": {
+      "Type": null,
+      "Name": "br.betano.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:02.955447Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:02.955638Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://br.betano.com",
+        "Url": "http://br.betano.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:02.955848Z",
+      "InsertAt": "2024-12-05T01:43:02.955873Z",
+      "UpdatedAt": "2024-12-05T01:43:02.955897Z"
+    }
+  },
+  {
+    "Name": "superbet.com",
+    "Host": "superbet.com",
+    "DNS": {
+      "Type": "A",
+      "Name": "superbet.com",
+      "Host": "superbet.com",
+      "ReverseDns": "server-108-158-147-80.gru3.r.cloudfront.net",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:03.07938Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "108.158.147.80",
+      "ResolvedAt": "2024-12-05T01:43:03.07938Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://superbet.com",
+        "Url": "http://superbet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:03.079381Z",
+      "InsertAt": "2024-12-05T01:43:03.079381Z",
+      "UpdatedAt": "2024-12-05T01:43:03.079381Z"
+    }
+  },
+  {
+    "Name": "magicjackpot.bet.br",
+    "Host": "magicjackpot.bet.br",
+    "DNS": {
+      "Type": null,
+      "Name": "magicjackpot.bet.br",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:03.177399Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:03.177399Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://magicjackpot.bet.br",
+        "Url": "http://magicjackpot.bet.br",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:03.1774Z",
+      "InsertAt": "2024-12-05T01:43:03.1774Z",
+      "UpdatedAt": "2024-12-05T01:43:03.1774Z"
+    }
+  },
+  {
+    "Name": "luckydays.bet.br",
+    "Host": "luckydays.bet.br",
+    "DNS": {
+      "Type": null,
+      "Name": "luckydays.bet.br",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:03.375119Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:03.37512Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://luckydays.bet.br",
+        "Url": "http://luckydays.bet.br",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:03.375121Z",
+      "InsertAt": "2024-12-05T01:43:03.375121Z",
+      "UpdatedAt": "2024-12-05T01:43:03.375121Z"
+    }
+  },
+  {
+    "Name": "sportingbet.com",
+    "Host": "sportingbet.com",
+    "DNS": {
+      "Type": "A",
+      "Name": "sportingbet.com",
+      "Host": "sportingbet.com",
+      "ReverseDns": "sb-91.itsfogo.com",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:03.618106Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "195.72.134.91",
+      "ResolvedAt": "2024-12-05T01:43:03.618107Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://sportingbet.com",
+        "Url": "http://sportingbet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:03.618108Z",
+      "InsertAt": "2024-12-05T01:43:03.618108Z",
+      "UpdatedAt": "2024-12-05T01:43:03.618108Z"
+    }
+  },
+  {
+    "Name": "betboo.com",
+    "Host": "betboo.com",
+    "DNS": {
+      "Type": "A",
+      "Name": "betboo.com",
+      "Host": "betboo.com",
+      "ReverseDns": "backgammon.betoto.com",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:03.942642Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "195.72.135.91",
+      "ResolvedAt": "2024-12-05T01:43:03.942643Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://betboo.com",
+        "Url": "http://betboo.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:03.942644Z",
+      "InsertAt": "2024-12-05T01:43:03.942644Z",
+      "UpdatedAt": "2024-12-05T01:43:03.942644Z"
+    }
+  },
+  {
+    "Name": "betnacional.com",
+    "Host": "betnacional.com",
+    "DNS": {
+      "Type": null,
+      "Name": "betnacional.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:04.215508Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:04.215509Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://betnacional.com",
+        "Url": "http://betnacional.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:04.21551Z",
+      "InsertAt": "2024-12-05T01:43:04.215511Z",
+      "UpdatedAt": "2024-12-05T01:43:04.215511Z"
+    }
+  },
+  {
+    "Name": "mrjack.bet",
+    "Host": "mrjack.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "mrjack.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:04.269635Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:04.269635Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://mrjack.bet",
+        "Url": "http://mrjack.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:04.269643Z",
+      "InsertAt": "2024-12-05T01:43:04.269643Z",
+      "UpdatedAt": "2024-12-05T01:43:04.269643Z"
+    }
+  },
+  {
+    "Name": "pagbet.com",
+    "Host": "pagbet.com",
+    "DNS": {
+      "Type": null,
+      "Name": "pagbet.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:04.314498Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:04.314499Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://pagbet.com",
+        "Url": "http://pagbet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:04.3145Z",
+      "InsertAt": "2024-12-05T01:43:04.3145Z",
+      "UpdatedAt": "2024-12-05T01:43:04.3145Z"
+    }
+  },
+  {
+    "Name": "KTO.com",
+    "Host": "KTO.com",
+    "DNS": {
+      "Type": null,
+      "Name": "KTO.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:04.384057Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:04.384058Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://KTO.com",
+        "Url": "http://KTO.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:04.384058Z",
+      "InsertAt": "2024-12-05T01:43:04.384058Z",
+      "UpdatedAt": "2024-12-05T01:43:04.384058Z"
+    }
+  },
+  {
+    "Name": "www.kto.com",
+    "Host": "www.kto.com",
+    "DNS": {
+      "Type": null,
+      "Name": "www.kto.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:04.433059Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:04.433059Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://www.kto.com",
+        "Url": "http://www.kto.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:04.43306Z",
+      "InsertAt": "2024-12-05T01:43:04.43306Z",
+      "UpdatedAt": "2024-12-05T01:43:04.43306Z"
+    }
+  },
+  {
+    "Name": "betsson.com",
+    "Host": "betsson.com",
+    "DNS": {
+      "Type": "A",
+      "Name": "betsson.com",
+      "Host": "betsson.com",
+      "ReverseDns": "server-18-67-130-98.gru1.r.cloudfront.net",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:04.4784Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "18.67.130.98",
+      "ResolvedAt": "2024-12-05T01:43:04.4784Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://betsson.com",
+        "Url": "http://betsson.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:04.478401Z",
+      "InsertAt": "2024-12-05T01:43:04.478401Z",
+      "UpdatedAt": "2024-12-05T01:43:04.478401Z"
+    }
+  },
+  {
+    "Name": "galera.bet",
+    "Host": "galera.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "galera.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:04.557751Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:04.557751Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://galera.bet",
+        "Url": "http://galera.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:04.557752Z",
+      "InsertAt": "2024-12-05T01:43:04.557752Z",
+      "UpdatedAt": "2024-12-05T01:43:04.557752Z"
+    }
+  },
+  {
+    "Name": "f12.bet",
+    "Host": "f12.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "f12.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:04.606192Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:04.606193Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://f12.bet",
+        "Url": "http://f12.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:04.606193Z",
+      "InsertAt": "2024-12-05T01:43:04.606193Z",
+      "UpdatedAt": "2024-12-05T01:43:04.606193Z"
+    }
+  },
+  {
+    "Name": "luva.bet",
+    "Host": "luva.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "luva.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:04.652404Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:04.652405Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://luva.bet",
+        "Url": "http://luva.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:04.652405Z",
+      "InsertAt": "2024-12-05T01:43:04.652405Z",
+      "UpdatedAt": "2024-12-05T01:43:04.652405Z"
+    }
+  },
+  {
+    "Name": "idopitaco.com.br",
+    "Host": "idopitaco.com.br",
+    "DNS": {
+      "Type": null,
+      "Name": "idopitaco.com.br",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:04.727722Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:04.727722Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://idopitaco.com.br",
+        "Url": "http://idopitaco.com.br",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:04.727723Z",
+      "InsertAt": "2024-12-05T01:43:04.727723Z",
+      "UpdatedAt": "2024-12-05T01:43:04.727723Z"
+    }
+  },
+  {
+    "Name": "caesarsports.com.br",
+    "Host": "caesarsports.com.br",
+    "DNS": {
+      "Type": "A",
+      "Name": "caesarsports.com.br",
+      "Host": "caesarsports.com.br",
+      "ReverseDns": "server-18-67-76-7.iad89.r.cloudfront.net",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:04.810146Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "18.67.76.7",
+      "ResolvedAt": "2024-12-05T01:43:04.810146Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://caesarsports.com.br",
+        "Url": "http://caesarsports.com.br",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:04.810147Z",
+      "InsertAt": "2024-12-05T01:43:04.810147Z",
+      "UpdatedAt": "2024-12-05T01:43:04.810147Z"
+    }
+  },
+  {
+    "Name": "betfair.com",
+    "Host": "betfair.com",
+    "DNS": {
+      "Type": null,
+      "Name": "betfair.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:04.917109Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:04.91711Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://betfair.com",
+        "Url": "http://betfair.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:04.917111Z",
+      "InsertAt": "2024-12-05T01:43:04.917111Z",
+      "UpdatedAt": "2024-12-05T01:43:04.917111Z"
+    }
+  },
+  {
+    "Name": "pokerstars.com",
+    "Host": "pokerstars.com",
+    "DNS": {
+      "Type": "A",
+      "Name": "pokerstars.com",
+      "Host": "pokerstars.com",
+      "ReverseDns": "ec2-52-50-35-237.eu-west-1.compute.amazonaws.com",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:04.971615Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "52.50.35.237",
+      "ResolvedAt": "2024-12-05T01:43:04.971616Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://pokerstars.com",
+        "Url": "http://pokerstars.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:04.971617Z",
+      "InsertAt": "2024-12-05T01:43:04.971617Z",
+      "UpdatedAt": "2024-12-05T01:43:04.971617Z"
+    }
+  },
+  {
+    "Name": "7games.bet",
+    "Host": "7games.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "7games.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:06.093167Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:06.093167Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://7games.bet",
+        "Url": "http://7games.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:06.093168Z",
+      "InsertAt": "2024-12-05T01:43:06.093168Z",
+      "UpdatedAt": "2024-12-05T01:43:06.093168Z"
+    }
+  },
+  {
+    "Name": "betao.com",
+    "Host": "betao.com",
+    "DNS": {
+      "Type": null,
+      "Name": "betao.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:06.172273Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:06.172273Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://betao.com",
+        "Url": "http://betao.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:06.172274Z",
+      "InsertAt": "2024-12-05T01:43:06.172274Z",
+      "UpdatedAt": "2024-12-05T01:43:06.172274Z"
+    }
+  },
+  {
+    "Name": "r7.bet",
+    "Host": "r7.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "r7.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:06.295529Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:06.295529Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://r7.bet",
+        "Url": "http://r7.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:06.29553Z",
+      "InsertAt": "2024-12-05T01:43:06.29553Z",
+      "UpdatedAt": "2024-12-05T01:43:06.29553Z"
+    }
+  },
+  {
+    "Name": "novibet.com",
+    "Host": "novibet.com",
+    "DNS": {
+      "Type": null,
+      "Name": "novibet.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:06.351322Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:06.351323Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://novibet.com",
+        "Url": "http://novibet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:06.351325Z",
+      "InsertAt": "2024-12-05T01:43:06.351325Z",
+      "UpdatedAt": "2024-12-05T01:43:06.351326Z"
+    }
+  },
+  {
+    "Name": "segurobet.com",
+    "Host": "segurobet.com",
+    "DNS": {
+      "Type": null,
+      "Name": "segurobet.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:06.442149Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:06.442149Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://segurobet.com",
+        "Url": "http://segurobet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:06.44215Z",
+      "InsertAt": "2024-12-05T01:43:06.44215Z",
+      "UpdatedAt": "2024-12-05T01:43:06.44215Z"
+    }
+  },
+  {
+    "Name": "ijogo.com",
+    "Host": "ijogo.com",
+    "DNS": {
+      "Type": null,
+      "Name": "ijogo.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:06.51163Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:06.51163Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://ijogo.com",
+        "Url": "http://ijogo.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:06.511632Z",
+      "InsertAt": "2024-12-05T01:43:06.511632Z",
+      "UpdatedAt": "2024-12-05T01:43:06.511632Z"
+    }
+  },
+  {
+    "Name": "fogo777.com",
+    "Host": "fogo777.com",
+    "DNS": {
+      "Type": null,
+      "Name": "fogo777.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:06.557241Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:06.557242Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://fogo777.com",
+        "Url": "http://fogo777.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:06.557242Z",
+      "InsertAt": "2024-12-05T01:43:06.557242Z",
+      "UpdatedAt": "2024-12-05T01:43:06.557242Z"
+    }
+  },
+  {
+    "Name": "p9.com",
+    "Host": "p9.com",
+    "DNS": {
+      "Type": null,
+      "Name": "p9.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:06.636176Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:06.636176Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://p9.com",
+        "Url": "http://p9.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:06.636177Z",
+      "InsertAt": "2024-12-05T01:43:06.636177Z",
+      "UpdatedAt": "2024-12-05T01:43:06.636177Z"
+    }
+  },
+  {
+    "Name": "9f.com",
+    "Host": "9f.com",
+    "DNS": {
+      "Type": null,
+      "Name": "9f.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:06.682086Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:06.682087Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://9f.com",
+        "Url": "http://9f.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:06.682088Z",
+      "InsertAt": "2024-12-05T01:43:06.682088Z",
+      "UpdatedAt": "2024-12-05T01:43:06.682088Z"
+    }
+  },
+  {
+    "Name": "6r.com",
+    "Host": "6r.com",
+    "DNS": {
+      "Type": null,
+      "Name": "6r.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:06.770428Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:06.770428Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://6r.com",
+        "Url": "http://6r.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:06.77043Z",
+      "InsertAt": "2024-12-05T01:43:06.77043Z",
+      "UpdatedAt": "2024-12-05T01:43:06.77043Z"
+    }
+  },
+  {
+    "Name": "bet.app",
+    "Host": "bet.app",
+    "DNS": {
+      "Type": null,
+      "Name": "bet.app",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:06.881007Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:06.881008Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://bet.app",
+        "Url": "http://bet.app",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:06.881009Z",
+      "InsertAt": "2024-12-05T01:43:06.881009Z",
+      "UpdatedAt": "2024-12-05T01:43:06.881009Z"
+    }
+  },
+  {
+    "Name": "bet365.com",
+    "Host": "bet365.com",
+    "DNS": {
+      "Type": null,
+      "Name": "bet365.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:06.949583Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:06.949583Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://bet365.com",
+        "Url": "http://bet365.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:06.949584Z",
+      "InsertAt": "2024-12-05T01:43:06.949584Z",
+      "UpdatedAt": "2024-12-05T01:43:06.949584Z"
+    }
+  },
+  {
+    "Name": "365sb.com",
+    "Host": "365sb.com",
+    "DNS": {
+      "Type": null,
+      "Name": "365sb.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:07.023125Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:07.023125Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://365sb.com",
+        "Url": "http://365sb.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:07.023126Z",
+      "InsertAt": "2024-12-05T01:43:07.023126Z",
+      "UpdatedAt": "2024-12-05T01:43:07.023126Z"
+    }
+  },
+  {
+    "Name": "apostaganha.bet",
+    "Host": "apostaganha.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "apostaganha.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:07.123727Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:07.123727Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://apostaganha.bet",
+        "Url": "http://apostaganha.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:07.123728Z",
+      "InsertAt": "2024-12-05T01:43:07.123728Z",
+      "UpdatedAt": "2024-12-05T01:43:07.123728Z"
+    }
+  },
+  {
+    "Name": "brazino777.com",
+    "Host": "brazino777.com",
+    "DNS": {
+      "Type": null,
+      "Name": "brazino777.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:07.198981Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:07.198981Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://brazino777.com",
+        "Url": "http://brazino777.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:07.198983Z",
+      "InsertAt": "2024-12-05T01:43:07.198983Z",
+      "UpdatedAt": "2024-12-05T01:43:07.198983Z"
+    }
+  },
+  {
+    "Name": "betway.com",
+    "Host": "betway.com",
+    "DNS": {
+      "Type": null,
+      "Name": "betway.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:07.352376Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:07.352377Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://betway.com",
+        "Url": "http://betway.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:07.352379Z",
+      "InsertAt": "2024-12-05T01:43:07.352379Z",
+      "UpdatedAt": "2024-12-05T01:43:07.352379Z"
+    }
+  },
+  {
+    "Name": "jackpotcitycasino.com",
+    "Host": "jackpotcitycasino.com",
+    "DNS": {
+      "Type": null,
+      "Name": "jackpotcitycasino.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:07.444637Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:07.444637Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://jackpotcitycasino.com",
+        "Url": "http://jackpotcitycasino.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:07.444638Z",
+      "InsertAt": "2024-12-05T01:43:07.444638Z",
+      "UpdatedAt": "2024-12-05T01:43:07.444638Z"
+    }
+  },
+  {
+    "Name": "spinpalace.com",
+    "Host": "spinpalace.com",
+    "DNS": {
+      "Type": null,
+      "Name": "spinpalace.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:07.495325Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:07.495326Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://spinpalace.com",
+        "Url": "http://spinpalace.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:07.495327Z",
+      "InsertAt": "2024-12-05T01:43:07.495327Z",
+      "UpdatedAt": "2024-12-05T01:43:07.495328Z"
+    }
+  },
+  {
+    "Name": "seubet.com",
+    "Host": "seubet.com",
+    "DNS": {
+      "Type": null,
+      "Name": "seubet.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:07.54939Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:07.54939Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://seubet.com",
+        "Url": "http://seubet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:07.549391Z",
+      "InsertAt": "2024-12-05T01:43:07.549391Z",
+      "UpdatedAt": "2024-12-05T01:43:07.549391Z"
+    }
+  },
+  {
+    "Name": "h2.bet",
+    "Host": "h2.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "h2.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:07.603942Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:07.603943Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://h2.bet",
+        "Url": "http://h2.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:07.603945Z",
+      "InsertAt": "2024-12-05T01:43:07.603945Z",
+      "UpdatedAt": "2024-12-05T01:43:07.603945Z"
+    }
+  },
+  {
+    "Name": "h2bet.com",
+    "Host": "h2bet.com",
+    "DNS": {
+      "Type": null,
+      "Name": "h2bet.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:07.655425Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:07.655425Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://h2bet.com",
+        "Url": "http://h2bet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:07.655426Z",
+      "InsertAt": "2024-12-05T01:43:07.655426Z",
+      "UpdatedAt": "2024-12-05T01:43:07.655426Z"
+    }
+  },
+  {
+    "Name": "Vbet.lat",
+    "Host": "Vbet.lat",
+    "DNS": {
+      "Type": null,
+      "Name": "Vbet.lat",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:07.718391Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:07.718391Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://Vbet.lat",
+        "Url": "http://Vbet.lat",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:07.718392Z",
+      "InsertAt": "2024-12-05T01:43:07.718392Z",
+      "UpdatedAt": "2024-12-05T01:43:07.718392Z"
+    }
+  },
+  {
+    "Name": "vivaro.com",
+    "Host": "vivaro.com",
+    "DNS": {
+      "Type": null,
+      "Name": "vivaro.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:07.757953Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:07.757953Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://vivaro.com",
+        "Url": "http://vivaro.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:07.757954Z",
+      "InsertAt": "2024-12-05T01:43:07.757954Z",
+      "UpdatedAt": "2024-12-05T01:43:07.757954Z"
+    }
+  },
+  {
+    "Name": "casadeapostas.com",
+    "Host": "casadeapostas.com",
+    "DNS": {
+      "Type": null,
+      "Name": "casadeapostas.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:07.912046Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:07.912046Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://casadeapostas.com",
+        "Url": "http://casadeapostas.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:07.912047Z",
+      "InsertAt": "2024-12-05T01:43:07.912047Z",
+      "UpdatedAt": "2024-12-05T01:43:07.912047Z"
+    }
+  },
+  {
+    "Name": "betsul.com",
+    "Host": "betsul.com",
+    "DNS": {
+      "Type": null,
+      "Name": "betsul.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:07.962498Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:07.962498Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://betsul.com",
+        "Url": "http://betsul.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:07.962499Z",
+      "InsertAt": "2024-12-05T01:43:07.962499Z",
+      "UpdatedAt": "2024-12-05T01:43:07.962499Z"
+    }
+  },
+  {
+    "Name": "betfast.io",
+    "Host": "betfast.io",
+    "DNS": {
+      "Type": null,
+      "Name": "betfast.io",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:08.187323Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:08.187323Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://betfast.io",
+        "Url": "http://betfast.io",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:08.187324Z",
+      "InsertAt": "2024-12-05T01:43:08.187324Z",
+      "UpdatedAt": "2024-12-05T01:43:08.187324Z"
+    }
+  },
+  {
+    "Name": "faz1bet.com",
+    "Host": "faz1bet.com",
+    "DNS": {
+      "Type": null,
+      "Name": "faz1bet.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:08.297849Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:08.297849Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://faz1bet.com",
+        "Url": "http://faz1bet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:08.297851Z",
+      "InsertAt": "2024-12-05T01:43:08.297851Z",
+      "UpdatedAt": "2024-12-05T01:43:08.297851Z"
+    }
+  },
+  {
+    "Name": "tivo.bet",
+    "Host": "tivo.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "tivo.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:08.467956Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:08.467957Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://tivo.bet",
+        "Url": "http://tivo.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:08.467958Z",
+      "InsertAt": "2024-12-05T01:43:08.467959Z",
+      "UpdatedAt": "2024-12-05T01:43:08.467959Z"
+    }
+  },
+  {
+    "Name": "4play.bet",
+    "Host": "4play.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "4play.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:08.553507Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:08.553507Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://4play.bet",
+        "Url": "http://4play.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:08.553509Z",
+      "InsertAt": "2024-12-05T01:43:08.553509Z",
+      "UpdatedAt": "2024-12-05T01:43:08.553509Z"
+    }
+  },
+  {
+    "Name": "pagol.bet",
+    "Host": "pagol.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "pagol.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:08.615686Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:08.615686Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://pagol.bet",
+        "Url": "http://pagol.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:08.615687Z",
+      "InsertAt": "2024-12-05T01:43:08.615687Z",
+      "UpdatedAt": "2024-12-05T01:43:08.615687Z"
+    }
+  },
+  {
+    "Name": "estadium.bet",
+    "Host": "estadium.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "estadium.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:08.728736Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:08.728736Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://estadium.bet",
+        "Url": "http://estadium.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:08.728738Z",
+      "InsertAt": "2024-12-05T01:43:08.728738Z",
+      "UpdatedAt": "2024-12-05T01:43:08.728738Z"
+    }
+  },
+  {
+    "Name": "joganho.bet",
+    "Host": "joganho.bet",
+    "DNS": {
+      "Type": "A",
+      "Name": "joganho.bet",
+      "Host": "joganho.bet",
+      "ReverseDns": "a2aa9ff50de748dbe.awsglobalaccelerator.com",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:08.766953Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "3.33.130.190",
+      "ResolvedAt": "2024-12-05T01:43:08.766953Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://joganho.bet",
+        "Url": "http://joganho.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:08.766954Z",
+      "InsertAt": "2024-12-05T01:43:08.766954Z",
+      "UpdatedAt": "2024-12-05T01:43:08.766954Z"
+    }
+  },
+  {
+    "Name": "oten.bet",
+    "Host": "oten.bet",
+    "DNS": {
+      "Type": "A",
+      "Name": "oten.bet",
+      "Host": "oten.bet",
+      "ReverseDns": "a2aa9ff50de748dbe.awsglobalaccelerator.com",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:09.43382Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "3.33.130.190",
+      "ResolvedAt": "2024-12-05T01:43:09.433821Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://oten.bet",
+        "Url": "http://oten.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:09.433822Z",
+      "InsertAt": "2024-12-05T01:43:09.433822Z",
+      "UpdatedAt": "2024-12-05T01:43:09.433822Z"
+    }
+  },
+  {
+    "Name": "supremabet.com",
+    "Host": "supremabet.com",
+    "DNS": {
+      "Type": null,
+      "Name": "supremabet.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:09.98752Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:09.987521Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://supremabet.com",
+        "Url": "http://supremabet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:09.987522Z",
+      "InsertAt": "2024-12-05T01:43:09.987522Z",
+      "UpdatedAt": "2024-12-05T01:43:09.987523Z"
+    }
+  },
+  {
+    "Name": "maximabet.net",
+    "Host": "maximabet.net",
+    "DNS": {
+      "Type": null,
+      "Name": "maximabet.net",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:10.08846Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:10.088461Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://maximabet.net",
+        "Url": "http://maximabet.net",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:10.088462Z",
+      "InsertAt": "2024-12-05T01:43:10.088462Z",
+      "UpdatedAt": "2024-12-05T01:43:10.088462Z"
+    }
+  },
+  {
+    "Name": "xpgames.bet",
+    "Host": "xpgames.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "xpgames.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:10.131462Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:10.131463Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://xpgames.bet",
+        "Url": "http://xpgames.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:10.131465Z",
+      "InsertAt": "2024-12-05T01:43:10.131465Z",
+      "UpdatedAt": "2024-12-05T01:43:10.131465Z"
+    }
+  },
+  {
+    "Name": "betesporte.com",
+    "Host": "betesporte.com",
+    "DNS": {
+      "Type": null,
+      "Name": "betesporte.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:10.465522Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:10.465524Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://betesporte.com",
+        "Url": "http://betesporte.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:10.465525Z",
+      "InsertAt": "2024-12-05T01:43:10.465525Z",
+      "UpdatedAt": "2024-12-05T01:43:10.465525Z"
+    }
+  },
+  {
+    "Name": "lancedesorte.com",
+    "Host": "lancedesorte.com",
+    "DNS": {
+      "Type": null,
+      "Name": "lancedesorte.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:10.710869Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:10.71087Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://lancedesorte.com",
+        "Url": "http://lancedesorte.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:10.710872Z",
+      "InsertAt": "2024-12-05T01:43:10.710872Z",
+      "UpdatedAt": "2024-12-05T01:43:10.710872Z"
+    }
+  },
+  {
+    "Name": "kingpanda.com",
+    "Host": "kingpanda.com",
+    "DNS": {
+      "Type": null,
+      "Name": "kingpanda.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:11.27315Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:11.273151Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://kingpanda.com",
+        "Url": "http://kingpanda.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:11.273161Z",
+      "InsertAt": "2024-12-05T01:43:11.273161Z",
+      "UpdatedAt": "2024-12-05T01:43:11.273161Z"
+    }
+  },
+  {
+    "Name": "leovegas.com",
+    "Host": "leovegas.com",
+    "DNS": {
+      "Type": "A",
+      "Name": "leovegas.com",
+      "Host": "leovegas.com",
+      "ReverseDns": "107.154.249.168.ip.incapdns.net",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:11.322335Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "107.154.249.168",
+      "ResolvedAt": "2024-12-05T01:43:11.322335Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://leovegas.com",
+        "Url": "http://leovegas.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:11.322336Z",
+      "InsertAt": "2024-12-05T01:43:11.322336Z",
+      "UpdatedAt": "2024-12-05T01:43:11.322336Z"
+    }
+  },
+  {
+    "Name": "royalpanda.com",
+    "Host": "royalpanda.com",
+    "DNS": {
+      "Type": "A",
+      "Name": "royalpanda.com",
+      "Host": "royalpanda.com",
+      "ReverseDns": "107.154.213.67.ip.incapdns.net",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:11.606771Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "107.154.213.67",
+      "ResolvedAt": "2024-12-05T01:43:11.606772Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://royalpanda.com",
+        "Url": "http://royalpanda.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:11.606773Z",
+      "InsertAt": "2024-12-05T01:43:11.606773Z",
+      "UpdatedAt": "2024-12-05T01:43:11.606773Z"
+    }
+  },
+  {
+    "Name": "betspeed.com",
+    "Host": "betspeed.com",
+    "DNS": {
+      "Type": null,
+      "Name": "betspeed.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:12.724538Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:12.724539Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://betspeed.com",
+        "Url": "http://betspeed.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:12.72454Z",
+      "InsertAt": "2024-12-05T01:43:12.72454Z",
+      "UpdatedAt": "2024-12-05T01:43:12.72454Z"
+    }
+  },
+  {
+    "Name": "sorteonline.com",
+    "Host": "sorteonline.com",
+    "DNS": {
+      "Type": null,
+      "Name": "sorteonline.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:12.823857Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:12.823858Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://sorteonline.com",
+        "Url": "http://sorteonline.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:12.823859Z",
+      "InsertAt": "2024-12-05T01:43:12.823859Z",
+      "UpdatedAt": "2024-12-05T01:43:12.823859Z"
+    }
+  },
+  {
+    "Name": "lottoland.com",
+    "Host": "lottoland.com",
+    "DNS": {
+      "Type": null,
+      "Name": "lottoland.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:12.876211Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:12.876211Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://lottoland.com",
+        "Url": "http://lottoland.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:12.876212Z",
+      "InsertAt": "2024-12-05T01:43:12.876212Z",
+      "UpdatedAt": "2024-12-05T01:43:12.876212Z"
+    }
+  },
+  {
+    "Name": "arenaplus.net.ph",
+    "Host": "arenaplus.net.ph",
+    "DNS": {
+      "Type": null,
+      "Name": "arenaplus.net.ph",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:13.078321Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:13.078321Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://arenaplus.net.ph",
+        "Url": "http://arenaplus.net.ph",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:13.078322Z",
+      "InsertAt": "2024-12-05T01:43:13.078322Z",
+      "UpdatedAt": "2024-12-05T01:43:13.078322Z"
+    }
+  },
+  {
+    "Name": "pixbet.com",
+    "Host": "pixbet.com",
+    "DNS": {
+      "Type": null,
+      "Name": "pixbet.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:14.246397Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:14.246397Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://pixbet.com",
+        "Url": "http://pixbet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:14.2464Z",
+      "InsertAt": "2024-12-05T01:43:14.2464Z",
+      "UpdatedAt": "2024-12-05T01:43:14.2464Z"
+    }
+  },
+  {
+    "Name": "flabet.com",
+    "Host": "flabet.com",
+    "DNS": {
+      "Type": null,
+      "Name": "flabet.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:14.309709Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:14.30971Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://flabet.com",
+        "Url": "http://flabet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:14.30971Z",
+      "InsertAt": "2024-12-05T01:43:14.309711Z",
+      "UpdatedAt": "2024-12-05T01:43:14.309711Z"
+    }
+  },
+  {
+    "Name": "betdasorte.com",
+    "Host": "betdasorte.com",
+    "DNS": {
+      "Type": null,
+      "Name": "betdasorte.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:14.416198Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:14.416198Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://betdasorte.com",
+        "Url": "http://betdasorte.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:14.416199Z",
+      "InsertAt": "2024-12-05T01:43:14.416199Z",
+      "UpdatedAt": "2024-12-05T01:43:14.4162Z"
+    }
+  },
+  {
+    "Name": "riojogos.com",
+    "Host": "riojogos.com",
+    "DNS": {
+      "Type": null,
+      "Name": "riojogos.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:14.49926Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:14.499264Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://riojogos.com",
+        "Url": "http://riojogos.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:14.499265Z",
+      "InsertAt": "2024-12-05T01:43:14.499265Z",
+      "UpdatedAt": "2024-12-05T01:43:14.499265Z"
+    }
+  },
+  {
+    "Name": "lottomaster.bet",
+    "Host": "lottomaster.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "lottomaster.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:14.582412Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:14.582413Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://lottomaster.bet",
+        "Url": "http://lottomaster.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:14.582415Z",
+      "InsertAt": "2024-12-05T01:43:14.582415Z",
+      "UpdatedAt": "2024-12-05T01:43:14.582415Z"
+    }
+  },
+  {
+    "Name": "betagora.io",
+    "Host": "betagora.io",
+    "DNS": {
+      "Type": null,
+      "Name": "betagora.io",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:14.644063Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:14.644064Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://betagora.io",
+        "Url": "http://betagora.io",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:14.644065Z",
+      "InsertAt": "2024-12-05T01:43:14.644065Z",
+      "UpdatedAt": "2024-12-05T01:43:14.644065Z"
+    }
+  },
+  {
+    "Name": "playpix.com",
+    "Host": "playpix.com",
+    "DNS": {
+      "Type": null,
+      "Name": "playpix.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:14.705911Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:14.705912Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://playpix.com",
+        "Url": "http://playpix.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:14.705913Z",
+      "InsertAt": "2024-12-05T01:43:14.705913Z",
+      "UpdatedAt": "2024-12-05T01:43:14.705913Z"
+    }
+  },
+  {
+    "Name": "dupoc.com",
+    "Host": "dupoc.com",
+    "DNS": {
+      "Type": null,
+      "Name": "dupoc.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:14.748845Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:14.748846Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://dupoc.com",
+        "Url": "http://dupoc.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:14.748847Z",
+      "InsertAt": "2024-12-05T01:43:14.748847Z",
+      "UpdatedAt": "2024-12-05T01:43:14.748847Z"
+    }
+  },
+  {
+    "Name": "apostou.com",
+    "Host": "apostou.com",
+    "DNS": {
+      "Type": null,
+      "Name": "apostou.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:14.800003Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:14.800004Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://apostou.com",
+        "Url": "http://apostou.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:14.800005Z",
+      "InsertAt": "2024-12-05T01:43:14.800005Z",
+      "UpdatedAt": "2024-12-05T01:43:14.800005Z"
+    }
+  },
+  {
+    "Name": "b1.bet",
+    "Host": "b1.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "b1.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:14.895696Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:14.895696Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://b1.bet",
+        "Url": "http://b1.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:14.895698Z",
+      "InsertAt": "2024-12-05T01:43:14.895698Z",
+      "UpdatedAt": "2024-12-05T01:43:14.895698Z"
+    }
+  },
+  {
+    "Name": "brbet.com",
+    "Host": "brbet.com",
+    "DNS": {
+      "Type": null,
+      "Name": "brbet.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:15.023399Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:15.023399Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://brbet.com",
+        "Url": "http://brbet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:15.0234Z",
+      "InsertAt": "2024-12-05T01:43:15.0234Z",
+      "UpdatedAt": "2024-12-05T01:43:15.0234Z"
+    }
+  },
+  {
+    "Name": "betgorillas.com",
+    "Host": "betgorillas.com",
+    "DNS": {
+      "Type": null,
+      "Name": "betgorillas.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:15.203822Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:15.203822Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://betgorillas.com",
+        "Url": "http://betgorillas.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:15.203823Z",
+      "InsertAt": "2024-12-05T01:43:15.203823Z",
+      "UpdatedAt": "2024-12-05T01:43:15.203824Z"
+    }
+  },
+  {
+    "Name": "donald.bet",
+    "Host": "donald.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "donald.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:15.226384Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:15.226384Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://donald.bet",
+        "Url": "http://donald.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:15.226385Z",
+      "InsertAt": "2024-12-05T01:43:15.226385Z",
+      "UpdatedAt": "2024-12-05T01:43:15.226386Z"
+    }
+  },
+  {
+    "Name": "bateubet.com",
+    "Host": "bateubet.com",
+    "DNS": {
+      "Type": null,
+      "Name": "bateubet.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:15.313343Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:15.313343Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://bateubet.com",
+        "Url": "http://bateubet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:15.313345Z",
+      "InsertAt": "2024-12-05T01:43:15.313345Z",
+      "UpdatedAt": "2024-12-05T01:43:15.313345Z"
+    }
+  },
+  {
+    "Name": "international.betwarrior.bet",
+    "Host": "international.betwarrior.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "international.betwarrior.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:15.382806Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:15.382806Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://international.betwarrior.bet",
+        "Url": "http://international.betwarrior.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:15.382807Z",
+      "InsertAt": "2024-12-05T01:43:15.382807Z",
+      "UpdatedAt": "2024-12-05T01:43:15.382807Z"
+    }
+  },
+  {
+    "Name": "pixmile.com",
+    "Host": "pixmile.com",
+    "DNS": {
+      "Type": "A",
+      "Name": "pixmile.com",
+      "Host": "pixmile.com",
+      "ReverseDns": "hit-phish.opendns.com",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:15.436488Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "146.112.61.108",
+      "ResolvedAt": "2024-12-05T01:43:15.436489Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://pixmile.com",
+        "Url": "http://pixmile.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:15.436489Z",
+      "InsertAt": "2024-12-05T01:43:15.436489Z",
+      "UpdatedAt": "2024-12-05T01:43:15.436489Z"
+    }
+  },
+  {
+    "Name": "sortenabet.com",
+    "Host": "sortenabet.com",
+    "DNS": {
+      "Type": null,
+      "Name": "sortenabet.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:15.514526Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:15.514527Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://sortenabet.com",
+        "Url": "http://sortenabet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:15.514529Z",
+      "InsertAt": "2024-12-05T01:43:15.514529Z",
+      "UpdatedAt": "2024-12-05T01:43:15.514529Z"
+    }
+  },
+  {
+    "Name": "betfusion.bet",
+    "Host": "betfusion.bet",
+    "DNS": {
+      "Type": null,
+      "Name": "betfusion.bet",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:15.609967Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:15.609968Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://betfusion.bet",
+        "Url": "http://betfusion.bet",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:15.609969Z",
+      "InsertAt": "2024-12-05T01:43:15.609969Z",
+      "UpdatedAt": "2024-12-05T01:43:15.60997Z"
+    }
+  },
+  {
+    "Name": "bandbet.com",
+    "Host": "bandbet.com",
+    "DNS": {
+      "Type": "A",
+      "Name": "bandbet.com",
+      "Host": "bandbet.com",
+      "ReverseDns": "aec037177372cc6cd.awsglobalaccelerator.com",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:15.699607Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "15.197.225.128",
+      "ResolvedAt": "2024-12-05T01:43:15.699608Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://bandbet.com",
+        "Url": "http://bandbet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:15.69961Z",
+      "InsertAt": "2024-12-05T01:43:15.69961Z",
+      "UpdatedAt": "2024-12-05T01:43:15.69961Z"
+    }
+  },
+  {
+    "Name": "vivasortebet.com",
+    "Host": "vivasortebet.com",
+    "DNS": {
+      "Type": "A",
+      "Name": "vivasortebet.com",
+      "Host": "vivasortebet.com",
+      "ReverseDns": "a2aa9ff50de748dbe.awsglobalaccelerator.com",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:16.333081Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "15.197.148.33",
+      "ResolvedAt": "2024-12-05T01:43:16.333082Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://vivasortebet.com",
+        "Url": "http://vivasortebet.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:16.333083Z",
+      "InsertAt": "2024-12-05T01:43:16.333083Z",
+      "UpdatedAt": "2024-12-05T01:43:16.333084Z"
+    }
+  },
+  {
+    "Name": "afun.com",
+    "Host": "afun.com",
+    "DNS": {
+      "Type": null,
+      "Name": "afun.com",
+      "Host": "N/A",
+      "ReverseDns": "N/A",
+      "CanonicalName": null,
+      "TTl": null,
+      "ResolvedAt": "2024-12-05T01:43:16.723342Z"
+    },
+    "Protocols": {
+      "Https": false,
+      "Http": false
+    },
+    "Ips": {
+      "Ip": "N/A",
+      "ResolvedAt": "2024-12-05T01:43:16.723344Z"
+    },
+    "Anatel": {
+      "AnatelInfo": {
+        "UrlFull": "http://afun.com",
+        "Url": "http://afun.com",
+        "File": null,
+        "Date": null,
+        "Hour": null,
+        "Mime": "application/json"
+      },
+      "CheckedAt": "2024-12-05T01:43:16.723346Z",
+      "InsertAt": "2024-12-05T01:43:16.723346Z",
+      "UpdatedAt": "2024-12-05T01:43:16.723346Z"
+    }
+  }
+]
