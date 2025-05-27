@@ -6,6 +6,9 @@
 
 **BetBlockerApi** é uma API que fornece uma lista detalhada de hosts de plataformas de apostas, facilitando a integração com aplicativos e outras plataformas. O objetivo desse serviço é centralizar e organizar informações de domínios relacionados a apostas, tornando o processo de análise, consulta e integração mais prático e eficiente para desenvolvedores e administradores de sistemas.
 
+**Contribua já: [repositório oficial](https://github.com/bet-blocker/bet-blocker/blob/main/blocklist.txt)**
+
+
 ## Recursos da API
 
 ## Iniciando uma resolução
